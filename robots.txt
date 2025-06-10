@@ -1,0 +1,63 @@
+# Robots.txt для сайта адвокатской конторы Макыжанова К.Т.
+
+# Разрешить индексацию всего сайта для всех поисковых роботов
+User-agent: *
+Allow: /
+
+# Специальные инструкции для основных поисковых систем
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Запретить доступ к техническим файлам и папкам
+Disallow: /js/
+Disallow: /css/
+Disallow: *.js$
+Disallow: *.css$
+
+# Запретить индексацию файлов конфигурации
+Disallow: /config/
+Disallow: /.htaccess
+Disallow: /admin/
+Disallow: /private/
+Disallow: /logs/
+
+# Разрешить доступ к изображениям
+Allow: /images/
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.gif
+Allow: *.svg
+Allow: *.webp
+
+# Указать расположение sitemap
+Sitemap: https://advokat-makyzhanov.kz/sitemap.xml
+
+# Время задержки между запросами (в секундах)
+Crawl-delay: 1
+
+# Дополнительные указания для локальных поисковиков Казахстана
+User-agent: Mail.Ru_Bot
+Allow: /
+Crawl-delay: 2
+
+# Запретить доступ к спам-ботам
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Конец файла robots.txt 

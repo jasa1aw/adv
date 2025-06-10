@@ -1,0 +1,628 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+.hero-section,
+.banner-bg-criminal,
+.banner-bg-administrative,
+.banner-bg-civil {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.hero-section {
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 0.7)
+		),
+		url('./images/download.jpg');
+}
+
+.form-container {
+	background: rgba(30, 30, 30, 0.95);
+	backdrop-filter: blur(10px);
+}
+
+.logo-svg {
+	filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+.gradient-text {
+	background: linear-gradient(45deg, #f59e0b, #fbbf24);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.btn-gradient {
+	background: linear-gradient(45deg, #f59e0b, #fbbf24);
+	box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+}
+
+.btn-gradient:hover {
+	background: linear-gradient(45deg, #d97706, #f59e0b);
+	box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
+}
+
+.header-bg {
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(10px);
+}
+
+.team-section {
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(10px);
+}
+
+.team-card {
+	background: white;
+	border-radius: 24px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-btn {
+	background: #25d366;
+	transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+	background: #20b558;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.email-btn {
+	background: #4338ca;
+	transition: all 0.3s ease;
+}
+
+.email-btn:hover {
+	background: #3730a3;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(67, 56, 202, 0.4);
+}
+
+/* Language Dropdown */
+.lang-dropdown {
+	position: relative;
+}
+
+.lang-trigger {
+	display: flex;
+	align-items: center;
+	space-x: 8px;
+	background: white;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	padding: 8px 12px;
+	cursor: pointer;
+	transition: all 0.2s;
+	min-width: 140px;
+}
+
+.lang-trigger:hover {
+	background: #f9fafb;
+	border-color: #d1d5db;
+}
+
+.lang-menu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background: white;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	z-index: 99999;
+	min-width: 140px;
+	margin-top: 4px;
+}
+
+.lang-dropdown {
+	position: relative;
+	z-index: 9999;
+}
+
+.lang-option {
+	display: flex;
+	align-items: center;
+	space-x: 8px;
+	padding: 6px 12px;
+	cursor: pointer;
+	transition: background 0.2s;
+	border-bottom: 1px solid #f3f4f6;
+}
+
+.lang-option:last-child {
+	border-bottom: none;
+}
+
+.lang-option:hover {
+	background: #f9fafb;
+}
+
+.service-item {
+	transition: all 0.3s ease;
+}
+
+.stats-card {
+	background: white;
+	border-radius: 20px;
+	padding: 2rem;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+	transform: translateY(-5px);
+}
+
+.stats-number {
+	font-size: 3rem;
+	font-weight: 800;
+	background: linear-gradient(45deg, #f59e0b, #fbbf24);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	line-height: 1;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Review Cards */
+.review-card {
+	background: white;
+	border-radius: 24px;
+	padding: 1.5rem;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.review-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.review-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+/* Carousel Styles */
+.hero-carousel {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.swiper-pagination-bullet {
+	background: white !important;
+	opacity: 0.5 !important;
+	width: 12px !important;
+	height: 12px !important;
+	margin: 0 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+	opacity: 1 !important;
+	background: #f59e0b !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: white !important;
+	background: rgba(0, 0, 0, 0.3) !important;
+	border-radius: 50% !important;
+	width: 44px !important;
+	height: 44px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-size: 20px !important;
+}
+
+/* Mobile pagination positioning */
+.swiper-pagination {
+	bottom: 20px !important;
+}
+
+.banner-bg-criminal {
+	background-image: linear-gradient(
+			rgba(139, 69, 19, 0.7),
+			rgba(101, 67, 33, 0.7)
+		),
+		url('./images/download.jpg');
+}
+
+.banner-bg-administrative {
+	background-image: linear-gradient(
+			rgba(30, 58, 138, 0.7),
+			rgba(29, 78, 216, 0.7)
+		),
+		url('./images/download.jpg');
+}
+
+.banner-bg-civil {
+	background-image: linear-gradient(
+			rgba(22, 101, 52, 0.7),
+			rgba(21, 128, 61, 0.7)
+		),
+		url('./images/download.jpg');
+}
+
+.form-error {
+	border: 2px solid #ef4444 !important;
+}
+
+.error-message {
+	color: #ef4444;
+	font-size: 0.875rem;
+	margin-top: 0.25rem;
+}
+
+/* Mobile optimizations */
+@media (max-width: 480px) {
+	/* Hide navigation buttons on mobile for better UX */
+	.swiper-button-next,
+	.swiper-button-prev {
+		display: none !important;
+	}
+
+	/* Optimize carousel slide padding */
+	.swiper-slide {
+		padding: 10px 8px !important;
+	}
+
+	/* Make content more compact on mobile */
+	.max-w-\[1250px\] {
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+
+	/* Reduce gaps between elements */
+	.space-y-6 {
+		gap: 1rem !important;
+	}
+
+	.gap-8 {
+		gap: 1rem !important;
+	}
+
+	/* Optimize typography for mobile */
+	h1 {
+		font-size: 1.5rem !important;
+		line-height: 1.3 !important;
+	}
+
+	h2 {
+		font-size: 1.25rem !important;
+		line-height: 1.3 !important;
+	}
+
+	/* Make form container more compact */
+	.form-container {
+		padding: 1rem !important;
+		margin: 0 4px !important;
+	}
+
+	/* Reduce button padding */
+	.btn-gradient {
+		padding: 0.75rem 1rem !important;
+		font-size: 0.875rem !important;
+	}
+
+	/* Optimize input fields */
+	input,
+	textarea {
+		padding: 0.75rem !important;
+		font-size: 0.875rem !important;
+	}
+
+	/* Reduce textarea height */
+	textarea {
+		height: 4rem !important;
+	}
+
+	/* Optimize feature list */
+	.grid-cols-1.md\:grid-cols-2 {
+		grid-template-columns: 1fr !important;
+		gap: 0.5rem !important;
+	}
+
+	/* Reduce font sizes */
+	.text-lg {
+		font-size: 0.875rem !important;
+	}
+
+	.text-xl {
+		font-size: 1rem !important;
+	}
+
+	.text-2xl {
+		font-size: 1.125rem !important;
+	}
+
+	/* Optimize header */
+	.header-bg {
+		padding: 0.75rem 1rem !important;
+	}
+
+	/* Stack elements vertically on mobile */
+	.flex-col.lg\:flex-row {
+		flex-direction: column !important;
+		gap: 1rem !important;
+	}
+}
+
+/* Extra small devices (iPhone 5s and similar) */
+@media (max-width: 320px) {
+	/* Further reduce spacing */
+	.px-4 {
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+	}
+
+	/* Make form even more compact */
+	.form-container {
+		padding: 0.75rem !important;
+		margin: 0 2px !important;
+	}
+
+	/* Reduce form title sizes */
+	.form-container h3 {
+		font-size: 0.875rem !important;
+		margin-bottom: 0.5rem !important;
+	}
+
+	/* Smaller buttons */
+	.btn-gradient {
+		padding: 0.5rem 0.75rem !important;
+		font-size: 0.75rem !important;
+	}
+
+	/* Compact inputs */
+	input,
+	textarea {
+		padding: 0.5rem !important;
+		font-size: 0.75rem !important;
+	}
+
+	/* Minimum textarea height */
+	textarea {
+		height: 3rem !important;
+	}
+
+	/* Reduce content spacing */
+	.space-y-6 {
+		gap: 0.5rem !important;
+	}
+
+	.space-y-4 {
+		gap: 0.25rem !important;
+	}
+
+	/* Optimize main container */
+	#home {
+		height: auto !important;
+		min-height: 100vh !important;
+	}
+
+	/* Center content */
+	.swiper-slide > div {
+		align-items: stretch !important;
+		justify-content: center !important;
+	}
+
+	/* Force form to full width on small screens */
+	.lg\:w-2\/5 {
+		width: 100% !important;
+		max-width: none !important;
+	}
+
+	/* Stack content vertically */
+	.lg\:w-3\/5 {
+		width: 100% !important;
+		order: 1 !important;
+	}
+
+	/* Form comes after content on mobile */
+	.lg\:w-2\/5 {
+		order: 2 !important;
+	}
+
+	/* Adjust carousel height for very small screens */
+	.hero-carousel {
+		min-height: 100vh !important;
+	}
+
+	/* Ensure content doesn't overflow */
+	.swiper-slide {
+		overflow-y: auto !important;
+		overflow-x: hidden !important;
+	}
+}
+
+/* Additional mobile optimizations for forms */
+@media (max-width: 375px) {
+	.form-container {
+		border-radius: 1rem !important;
+	}
+
+	.btn-gradient {
+		text-transform: none !important;
+		letter-spacing: normal !important;
+	}
+
+	/* Optimize feature dots */
+	.w-3.h-3 {
+		width: 0.5rem !important;
+		height: 0.5rem !important;
+	}
+
+	/* Reduce feature text spacing */
+	.space-x-3 {
+		gap: 0.5rem !important;
+	}
+}
+/* Стили для карусели */
+
+.carousel {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel-inner {
+	position: relative;
+	width: 100%;
+}
+
+.carousel-slide {
+	transition: opacity 0.5s ease-in-out;
+	opacity: 1;
+}
+
+.carousel-slide.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Стили для кнопок навигации */
+.carousel-control {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	cursor: pointer;
+	padding: 1rem;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: background-color 0.3s ease;
+}
+
+.carousel-control:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-control.prev {
+	left: 1rem;
+}
+
+.carousel-control.next {
+	right: 1rem;
+}
+
+/* Стили для индикаторов */
+.carousel-indicators {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 0.5rem;
+	z-index: 10;
+}
+
+
+.carousel-indicators button {
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+
+.carousel-indicators button:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-indicators button.active {
+	background-color: white;
+}
+
+/* Анимации для слайдов */
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideOut {
+	from {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+}
+
+.carousel-slide.sliding-in {
+	animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.carousel-slide.sliding-out {
+	animation: slideOut 0.5s ease-in-out forwards;
+}
+
+/* Стили для сообщений об ошибках */
+.error-message {
+	color: #ef4444;
+	font-size: 0.875rem;
+	margin-top: 0.25rem;
+	display: none;
+}
+
+.error-message.visible {
+	display: block;
+}
+
+/* Стили для формы */
+.form-container {
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+input:invalid,
+textarea:invalid {
+	border-color: #ef4444;
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+	box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}

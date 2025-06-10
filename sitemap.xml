@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Главная страница -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://advokat-makyzhanov.kz/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://advokat-makyzhanov.kz/?lang=kz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://advokat-makyzhanov.kz/?lang=en" />
+    <image:image>
+      <image:loc>https://advokat-makyzhanov.kz/images/icons/logo.svg</image:loc>
+      <image:title>Адвокат Макыжанов К.Т. логотип</image:title>
+      <image:caption>Логотип адвокатской конторы Макыжанова К.Т.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Страница о компании -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/#about</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Услуги -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/#services</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Команда -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/#team</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Отзывы -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/#reviews</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Уголовные дела -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/#criminal</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Административные дела -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/#administrative</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Гражданские дела -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/#civil</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Казахская версия сайта -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/?lang=kz</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://advokat-makyzhanov.kz/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://advokat-makyzhanov.kz/?lang=kz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://advokat-makyzhanov.kz/?lang=en" />
+  </url>
+
+  <!-- Английская версия сайта -->
+  <url>
+    <loc>https://advokat-makyzhanov.kz/?lang=en</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://advokat-makyzhanov.kz/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://advokat-makyzhanov.kz/?lang=kz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://advokat-makyzhanov.kz/?lang=en" />
+  </url>
+
+</urlset> 
