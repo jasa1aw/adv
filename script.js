@@ -1,15 +1,12 @@
-// Карусель
 document.addEventListener('DOMContentLoaded', function () {
 	const carousel = document.querySelector('.carousel')
 	const slides = document.querySelectorAll('.carousel-slide')
 	const prevBtn = document.querySelector('.carousel-control.prev')
 	const nextBtn = document.querySelector('.carousel-control.next')
 	const indicators = document.querySelectorAll('.carousel-indicators button')
-
 	let currentSlide = 0
 	const slideCount = slides.length
 
-	// Инициализация карусели
 	function initCarousel() {
 		slides.forEach((slide, index) => {
 			slide.style.display = index === 0 ? 'flex' : 'none'
@@ -17,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		updateIndicators()
 	}
 
-	// Обновление индикаторов
 	function updateIndicators() {
 		indicators.forEach((indicator, index) => {
 			indicator.classList.toggle('bg-white', index === currentSlide)
@@ -25,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	}
 
-	// Переключение слайдов
 	function goToSlide(index) {
 		slides[currentSlide].style.display = 'none'
 		currentSlide = (index + slideCount) % slideCount
@@ -33,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		updateIndicators()
 	}
 
-	// Обработчики событий
 	prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1))
 	nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1))
 
@@ -41,10 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		indicator.addEventListener('click', () => goToSlide(index))
 	})
 
-	// Автоматическое переключение слайдов
 	setInterval(() => goToSlide(currentSlide + 1), 5000)
 
-	// Инициализация карусели
 	initCarousel()
 })
 
@@ -53,23 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	const forms = document.querySelectorAll('#consultationForm')
 
 	forms.forEach(form => {
-		// const nameInput = form.querySelector('input[type="text"]')
 		const phoneInput = form.querySelector('input[type="tel"]')
-		// const nameError = nameInput.nextElementSibling
 		const phoneError = phoneInput.nextElementSibling
 
-		// Валидация имени
-		// nameInput.addEventListener('input', function () {
-		// 	const namePattern = /^[А-Яа-яЁё\s]{2,}$/
-		// 	if (!namePattern.test(this.value)) {
-		// 		nameError.textContent = 'Введите корректное ФИО (только русские буквы)'
-		// 		nameError.classList.remove('hidden')
-		// 	} else {
-		// 		nameError.classList.add('hidden')
-		// 	}
-		// })
-
-		// Валидация телефона
 		phoneInput.addEventListener('input', function () {
 			const phonePattern =
 				/^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/
@@ -91,12 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			let isValid = true
 
-			// if (!namePattern.test(nameInput.value)) {
-			// 	nameError.textContent = 'Введите корректное ФИО (только русские буквы)'
-			// 	nameError.classList.remove('hidden')
-			// 	isValid = false
-			// }
-
 			if (!phonePattern.test(phoneInput.value)) {
 				phoneError.textContent = 'Введите корректный номер телефона'
 				phoneError.classList.remove('hidden')
@@ -104,8 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 
 			if (isValid) {
-				// Здесь можно добавить код для отправки формы на сервер
-				alert('Форма успешно отправлена!')
 				form.reset()
 			}
 		})

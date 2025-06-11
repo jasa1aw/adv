@@ -1,4 +1,3 @@
-// Translations object
 const translations = {
 	ru: {
 		companyName: 'Адвокат Макыжанов К.Т.',

@@ -1,4 +1,3 @@
-// Services data
 const servicesData = [
   {
     id: 'criminal',

@@ -1,4 +1,3 @@
-// Team data
 const teamMembers = [
 	{
 		id: 1,

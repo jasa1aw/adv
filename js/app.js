@@ -267,13 +267,11 @@ function initHeroCarousel() {
 		effect: 'slide',
 		spaceBetween: 0,
 
-		// Touch settings for mobile
 		touchRatio: 1,
 		touchAngle: 45,
 		grabCursor: true,
 		allowTouchMove: true,
 
-		// If we need pagination
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
@@ -281,15 +279,12 @@ function initHeroCarousel() {
 			bulletActiveClass: 'swiper-pagination-bullet-active',
 		},
 
-		// Navigation arrows
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
 
-		// Responsive breakpoints
 		breakpoints: {
-			// when window width is >= 320px (iPhone 5s)
 			320: {
 				effect: 'slide',
 				speed: 400,
@@ -316,10 +311,8 @@ function initHeroCarousel() {
 			},
 		},
 
-		// Handle slide change for mobile optimization
 		on: {
 			slideChange: function () {
-				// Ensure proper layout on mobile after slide change
 				if (window.innerWidth <= 480) {
 					setTimeout(() => {
 						this.update()
@@ -330,12 +323,9 @@ function initHeroCarousel() {
 	})
 }
 
-// WhatsApp configuration
 const WHATSAPP_NUMBER = '77002929573'
 
-// Function to send form data to WhatsApp
 function sendToWhatsApp(data) {
-	// Create message text based on case type
 	let caseTypeText = ''
 	switch (data.caseType) {
 		case 'criminal':
@@ -351,7 +341,6 @@ function sendToWhatsApp(data) {
 			caseTypeText = 'правовому вопросу'
 	}
 
-	// Format the message
 	const message = `Здравствуйте! Меня зовут ${data.fullName}. Обращаюсь к вам по ${caseTypeText}. Моя ситуация: ${data.message}
 Мой контактный номер: ${data.phone}
 Прошу связаться со мной для получения консультации.
@@ -362,7 +351,6 @@ function sendToWhatsApp(data) {
 		message
 	)}`
 
-	// Open WhatsApp
 	window.open(whatsappUrl, '_blank')
 }
 
@@ -426,10 +414,8 @@ function formatPhoneNumber(value) {
 }
 
 function validatePhone(phone) {
-	// Clean phone number - remove all non-digits
 	const cleanPhone = phone.replace(/\D/g, '')
 
-	// Check for valid Kazakh phone numbers (should be 11 digits: 7 + 10 digits)
 	return cleanPhone.length === 11 && cleanPhone.startsWith('7')
 }
 
@@ -511,28 +497,7 @@ function initForm() {
 					timestamp: new Date().toISOString(),
 				}
 
-				// Send data to WhatsApp
 				sendToWhatsApp(data)
-
-				// Show success message based on case type
-				// let successMessage =
-				// 	'Заявка отправлена! Мы свяжемся с вами в ближайшее время.'
-				// switch (caseType) {
-				// 	case 'criminal':
-				// 		successMessage =
-				// 			'Ваша заявка по уголовному делу принята! Юрист свяжется с вами в течение часа.'
-				// 		break
-				// 	case 'administrative':
-				// 		successMessage =
-				// 			'Заявка по административному делу отправлена! Мы поможем обжаловать решение.'
-				// 		break
-				// 	case 'civil':
-				// 		successMessage =
-				// 			'Ваш запрос по гражданскому спору получен! Ожидайте звонка юриста.'
-				// 		break
-				// }
-
-				// alert(successMessage)
 
 				// Reset form
 				form.reset()
