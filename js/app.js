@@ -120,7 +120,6 @@ function updateLanguage() {
 		}
 	})
 
-	// Update placeholders
 	const placeholderElements = document.querySelectorAll(
 		'[data-placeholder-translate]'
 	)
@@ -132,7 +131,6 @@ function updateLanguage() {
 	})
 }
 
-// Render services function
 function renderServices() {
 	const container = document.getElementById('servicesContainer')
 	if (!container) return
@@ -157,12 +155,8 @@ function renderServices() {
 function renderTeam() {
 	const container = document.getElementById('teamContainer')
 	if (!container) return
-
 	container.innerHTML = ''
-
 	teamMembers.forEach((member, index) => {
-		// Нечетные карточки (1, 3, 5...) - фото справа, данные слева
-		// Четные карточки (0, 2, 4...) - фото слева, данные справа
 		const isOdd = index % 2 === 1
 		const memberHtml = `
 	<div class="bg-white rounded-3xl shadow-lg overflow-hidden mb-8">
@@ -521,24 +515,24 @@ function initForm() {
 				sendToWhatsApp(data)
 
 				// Show success message based on case type
-				let successMessage =
-					'Заявка отправлена! Мы свяжемся с вами в ближайшее время.'
-				switch (caseType) {
-					case 'criminal':
-						successMessage =
-							'Ваша заявка по уголовному делу принята! Юрист свяжется с вами в течение часа.'
-						break
-					case 'administrative':
-						successMessage =
-							'Заявка по административному делу отправлена! Мы поможем обжаловать решение.'
-						break
-					case 'civil':
-						successMessage =
-							'Ваш запрос по гражданскому спору получен! Ожидайте звонка юриста.'
-						break
-				}
+				// let successMessage =
+				// 	'Заявка отправлена! Мы свяжемся с вами в ближайшее время.'
+				// switch (caseType) {
+				// 	case 'criminal':
+				// 		successMessage =
+				// 			'Ваша заявка по уголовному делу принята! Юрист свяжется с вами в течение часа.'
+				// 		break
+				// 	case 'administrative':
+				// 		successMessage =
+				// 			'Заявка по административному делу отправлена! Мы поможем обжаловать решение.'
+				// 		break
+				// 	case 'civil':
+				// 		successMessage =
+				// 			'Ваш запрос по гражданскому спору получен! Ожидайте звонка юриста.'
+				// 		break
+				// }
 
-				alert(successMessage)
+				// alert(successMessage)
 
 				// Reset form
 				form.reset()
