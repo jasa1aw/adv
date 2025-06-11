@@ -247,9 +247,8 @@ body {
 
 /* Mobile pagination positioning */
 .swiper-pagination {
-	bottom: 20px !important;
+	bottom: 10px !important;
 }
-
 .banner-bg-criminal {
 	background-image: linear-gradient(
 			rgba(139, 69, 19, 0.7),
@@ -294,7 +293,7 @@ body {
 
 	/* Optimize carousel slide padding */
 	.swiper-slide {
-		padding: 10px 8px !important;
+		padding: 40px 8px !important;
 	}
 
 	/* Make content more compact on mobile */

@@ -159,13 +159,13 @@ function renderTeam() {
 	teamMembers.forEach((member, index) => {
 		const isOdd = index % 2 === 1
 		const memberHtml = `
-	<div class="bg-white rounded-3xl shadow-lg overflow-hidden mb-8">
+	<div class="bg-white rounded-3xl shadow-lg overflow-hidden mb-8 ">
         <div class="flex flex-col ${isOdd ? 'lg:flex-row' : 'lg:flex-row-reverse'
 			}">
           <!-- Photo Section -->
           <div class="lg:w-2/5">
             <img src="${member.image}" alt="${member.name[currentLang]
-			}" class="w-full h-64 lg:h-full object-cover object-center">
+			}" class="w-full h-64 lg:h-full lg:object-cover md:object:cover object-contain object-center ">
           </div>
           
           <!-- Content Section -->
