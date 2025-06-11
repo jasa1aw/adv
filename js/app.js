@@ -139,10 +139,12 @@ function renderServices() {
 
 	servicesData.forEach(service => {
 		const serviceHtml = `
-	<div class="service-item ${service.color
-			} hover:bg-slate-800 text-white px-6 py-4 rounded-2xl cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-        <span class="font-semibold text-center block" data-translate="${service.titleKey
-			}">
+	<div class="service-item ${
+		service.color
+	} hover:bg-slate-800 text-white px-6 py-4 rounded-2xl cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+        <span class="font-semibold text-center block" data-translate="${
+					service.titleKey
+				}">
 		${translations[currentLang][service.titleKey]}
         </span>
 	</div>
@@ -160,84 +162,98 @@ function renderTeam() {
 		const isOdd = index % 2 === 1
 		const memberHtml = `
 	<div class="bg-white rounded-3xl shadow-lg overflow-hidden mb-8 ">
-        <div class="flex flex-col ${isOdd ? 'lg:flex-row' : 'lg:flex-row-reverse'
-			}">
+        <div class="flex flex-col ${
+					isOdd ? 'lg:flex-row' : 'lg:flex-row-reverse'
+				}">
           <!-- Photo Section -->
           <div class="lg:w-2/5">
-            <img src="${member.image}" alt="${member.name[currentLang]
-			}" class="w-full h-64 lg:h-full lg:object-cover md:object:cover object-contain object-center ">
+            <img src="${member.image}" alt="${
+			member.name[currentLang]
+		}" class="w-full h-64 lg:h-full lg:object-cover md:object:cover object-contain object-center ">
           </div>
           
           <!-- Content Section -->
           <div class="lg:w-3/5 p-6 lg:p-8 flex flex-col justify-center">
-            <h3 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">${member.name[currentLang]
-			}</h3>
+            <h3 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">${
+							member.name[currentLang]
+						}</h3>
             
-            <p class="text-gray-700 mb-6 leading-relaxed text-base lg:text-lg">${member.description[currentLang]
-			}</p>
+            <p class="text-gray-700 mb-6 leading-relaxed text-base lg:text-lg">${
+							member.description[currentLang]
+						}</p>
             
             <div class="mb-6">
-              <h4 class="text-lg font-bold text-gray-800 mb-4">${translations[currentLang].whyChoose
-			}</h4>
+              <h4 class="text-lg font-bold text-gray-800 mb-4">${
+								translations[currentLang].whyChoose
+							}</h4>
               
               <div class="space-y-3">
                 <div class="flex items-start space-x-3">
                   <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <strong class="text-gray-800">${translations[currentLang].expertise
-			}</strong>
-                    <span class="text-gray-700 ml-1">${member.expertise[currentLang]
-			}</span>
+                    <strong class="text-gray-800">${
+											translations[currentLang].expertise
+										}</strong>
+                    <span class="text-gray-700 ml-1">${
+											member.expertise[currentLang]
+										}</span>
                   </div>
                 </div>
                 
                 <div class="flex items-start space-x-3">
                   <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <strong class="text-gray-800">${translations[currentLang].individualApproach
-			}</strong>
-                    <span class="text-gray-700 ml-1">${member.individualApproach[currentLang]
-			}</span>
+                    <strong class="text-gray-800">${
+											translations[currentLang].individualApproach
+										}</strong>
+                    <span class="text-gray-700 ml-1">${
+											member.individualApproach[currentLang]
+										}</span>
                   </div>
                 </div>
                 
-                ${member.confidentiality
-				? `<div class="flex items-start space-x-3">
+                ${
+									member.confidentiality
+										? `<div class="flex items-start space-x-3">
                     <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <strong class="text-gray-800">${translations[currentLang].confidentiality}</strong>
                       <span class="text-gray-700 ml-1">${member.confidentiality[currentLang]}</span>
                     </div>
                   </div>`
-				: ''
-			}
+										: ''
+								}
                 
-                ${member.rightsProtection
-				? `<div class="flex items-start space-x-3">
+                ${
+									member.rightsProtection
+										? `<div class="flex items-start space-x-3">
                     <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <strong class="text-gray-800">${translations[currentLang].rightsProtection}</strong>
                       <span class="text-gray-700 ml-1">${member.rightsProtection[currentLang]}</span>
                     </div>
                   </div>`
-				: ''
-			}
+										: ''
+								}
               </div>
             </div>
             
-            <p class="text-gray-700 mb-6 text-base">${translations[currentLang].contactToday
-			}</p>
+            <p class="text-gray-700 mb-6 text-base">${
+							translations[currentLang].contactToday
+						}</p>
             
             <div class="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/${member.contacts.whatsapp
-			}" target="_blank" class="whatsapp-btn text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-3 font-semibold text-base transition-all duration-300 hover:transform hover:scale-105">
+              <a href="https://wa.me/${
+								member.contacts.whatsapp
+							}" target="_blank" class="whatsapp-btn text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-3 font-semibold text-base transition-all duration-300 hover:transform hover:scale-105">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787"/>
                 </svg>
                 <span>WhatsApp</span>
               </a>
-              ${member.contacts.email
-				? `
+              ${
+								member.contacts.email
+									? `
               <a href="mailto:${member.contacts.email}" class="email-btn text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-3 font-semibold text-base transition-all duration-300 hover:transform hover:scale-105">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
@@ -246,8 +262,8 @@ function renderTeam() {
                 <span>Email</span>
               </a>
               `
-				: ''
-			}
+									: ''
+							}
             </div>
           </div>
         </div>
@@ -259,6 +275,22 @@ function renderTeam() {
 
 // Initialize Swiper carousel
 function initHeroCarousel() {
+	// Check if Swiper is available
+	if (typeof Swiper === 'undefined') {
+		console.warn('Swiper library not loaded yet, retrying...')
+		setTimeout(initHeroCarousel, 100)
+		return
+	}
+
+	const heroCarousel = document.querySelector('.hero-carousel')
+	if (!heroCarousel) {
+		console.warn('Hero carousel element not found')
+		return
+	}
+
+	// Show loading state
+	heroCarousel.classList.add('loading')
+
 	const swiper = new Swiper('.hero-carousel', {
 		// Optional parameters
 		direction: 'horizontal',
@@ -266,6 +298,19 @@ function initHeroCarousel() {
 		speed: 600,
 		effect: 'slide',
 		spaceBetween: 0,
+
+		// Enable lazy loading for better performance
+		lazy: {
+			loadPrevNext: true,
+			loadPrevNextAmount: 1,
+		},
+
+		// Optimize for performance
+		simulateTouch: true,
+		allowTouchMove: true,
+		// resistanceRatio: 0.85,
+		threshold: 10,
+		// longSwipesRatio: 0.5,
 
 		touchRatio: 1,
 		touchAngle: 45,
@@ -312,6 +357,25 @@ function initHeroCarousel() {
 		},
 
 		on: {
+			init: function () {
+				// Remove loading state
+				heroCarousel.classList.remove('loading')
+
+				// Optimize images loading after swiper initialization
+				this.slides.forEach((slide, index) => {
+					if (index === 0) {
+						// Immediately load first slide images
+						const images = slide.querySelectorAll('img[data-src]')
+						images.forEach(img => {
+							img.src = img.dataset.src
+							img.removeAttribute('data-src')
+						})
+					}
+				})
+
+				// Mark carousel as ready
+				heroCarousel.setAttribute('data-swiper-ready', 'true')
+			},
 			slideChange: function () {
 				if (window.innerWidth <= 480) {
 					setTimeout(() => {
@@ -321,6 +385,22 @@ function initHeroCarousel() {
 			},
 		},
 	})
+
+	// Preload next slide for smoother transitions
+	swiper.on('slideChange', function () {
+		const nextIndex = this.activeIndex + 1
+		const nextSlide = this.slides[nextIndex]
+		if (nextSlide) {
+			const images = nextSlide.querySelectorAll('img[data-src]')
+			images.forEach(img => {
+				img.src = img.dataset.src
+				img.removeAttribute('data-src')
+			})
+		}
+	})
+
+	// Return swiper instance for further use
+	return swiper
 }
 
 const WHATSAPP_NUMBER = '77002929573'
@@ -442,10 +522,10 @@ function validateForm(form) {
 	const phoneInput = form.querySelector('input[name="phone"]')
 	const messageInput = form.querySelector('textarea[name="message"]')
 
-		// Clear previous errors
-		;[phoneInput, messageInput].forEach(input => {
-			if (input) hideError(input)
-		})
+	// Clear previous errors
+	;[phoneInput, messageInput].forEach(input => {
+		if (input) hideError(input)
+	})
 
 	// Validate phone
 	if (phoneInput) {
@@ -628,5 +708,30 @@ document.addEventListener('DOMContentLoaded', function () {
 	initForm()
 	initCounterAnimation()
 	initScrollNavigation()
-	initHeroCarousel()
+	// Swiper initialization moved to early loader
 })
+
+// Early Swiper initialization for faster carousel loading
+if (document.readyState === 'loading') {
+	// DOM is still loading, wait for it
+	document.addEventListener('DOMContentLoaded', function () {
+		// Try to initialize Swiper early if elements are ready
+		const heroCarousel = document.querySelector('.hero-carousel')
+		if (heroCarousel && typeof Swiper !== 'undefined') {
+			initHeroCarousel()
+		}
+	})
+} else {
+	// DOM is already loaded
+	if (typeof Swiper !== 'undefined') {
+		initHeroCarousel()
+	} else {
+		// Wait for Swiper to load
+		const checkSwiper = setInterval(() => {
+			if (typeof Swiper !== 'undefined') {
+				initHeroCarousel()
+				clearInterval(checkSwiper)
+			}
+		}, 50)
+	}
+}

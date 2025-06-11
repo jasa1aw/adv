@@ -1,6 +1,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+
 .hero-section,
 .banner-bg-criminal,
 .banner-bg-administrative,
@@ -11,11 +12,9 @@ body {
 }
 
 .hero-section {
-	background-image: linear-gradient(
-			rgba(0, 0, 0, 0.7),
-			rgba(0, 0, 0, 0.7)
-		),
-		url('./images/download.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 0.7)),
+		url('./images/backgroundHero.webp');
 }
 
 .form-container {
@@ -209,13 +208,33 @@ body {
 .hero-carousel {
 	width: 100%;
 	height: 100%;
+	/* Prevent layout shift during loading */
+	min-height: 500px;
+	/* Hardware acceleration for smoother animations */
+	/* transform: translateZ(0); */
+	will-change: transform;
+	/* Improve loading experience */
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+/* Loading state for carousel */
+.hero-carousel.loading {
+	opacity: 0.5;
 }
 
 .swiper-slide {
-	display: flex;
+	display: flex !important;
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
+	will-change: transform;
+	/* Optimize rendering */
+	contain: layout;
+	/* Prevent unnecessary repaints during slide changes */
+	backface-visibility: hidden;
+	/* Enable hardware acceleration */
+	/* transform: translateZ(0); */
 }
 
 .swiper-pagination-bullet {
@@ -249,28 +268,23 @@ body {
 .swiper-pagination {
 	bottom: 10px !important;
 }
+
 .banner-bg-criminal {
-	background-image: linear-gradient(
-			rgba(139, 69, 19, 0.7),
-			rgba(101, 67, 33, 0.7)
-		),
-		url('./images/download.jpg');
+	background-image: linear-gradient(rgba(139, 69, 19, 0.7),
+			rgba(101, 67, 33, 0.7)),
+		url('./images/backgroundHero.webp');
 }
 
 .banner-bg-administrative {
-	background-image: linear-gradient(
-			rgba(30, 58, 138, 0.7),
-			rgba(29, 78, 216, 0.7)
-		),
-		url('./images/download.jpg');
+	background-image: linear-gradient(rgba(30, 58, 138, 0.7),
+			rgba(29, 78, 216, 0.7)),
+		url('./images/backgroundHero.webp');
 }
 
 .banner-bg-civil {
-	background-image: linear-gradient(
-			rgba(22, 101, 52, 0.7),
-			rgba(21, 128, 61, 0.7)
-		),
-		url('./images/download.jpg');
+	background-image: linear-gradient(rgba(22, 101, 52, 0.7),
+			rgba(21, 128, 61, 0.7)),
+		url('./images/backgroundHero.webp');
 }
 
 .form-error {
@@ -285,6 +299,7 @@ body {
 
 /* Mobile optimizations */
 @media (max-width: 480px) {
+
 	/* Hide navigation buttons on mobile for better UX */
 	.swiper-button-next,
 	.swiper-button-prev {
@@ -379,6 +394,7 @@ body {
 
 /* Extra small devices (iPhone 5s and similar) */
 @media (max-width: 320px) {
+
 	/* Further reduce spacing */
 	.px-4 {
 		padding-left: 0.5rem !important;
@@ -431,7 +447,7 @@ body {
 	}
 
 	/* Center content */
-	.swiper-slide > div {
+	.swiper-slide>div {
 		align-items: stretch !important;
 		justify-content: center !important;
 	}
@@ -487,6 +503,7 @@ body {
 		gap: 0.5rem !important;
 	}
 }
+
 /* Стили для карусели */
 
 .carousel {

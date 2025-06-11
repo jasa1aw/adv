@@ -27,6 +27,14 @@
 		<meta name="geo.position" content="49.8047;73.1094" />
 		<meta name="ICBM" content="49.8047, 73.1094" />
 
+		<!-- Preconnect to external resources -->
+		<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+		<link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+		
+		<!-- Preload critical Swiper resources -->
+		<link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" as="style" />
+		<link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" as="script" />
+
 		<!-- Open Graph Meta Tags -->
 		<meta property="og:type" content="website" />
 		<meta
@@ -104,32 +112,44 @@
 				}
 			}
 		</script>
-
+		<link rel="icon" href="./images/icons/icon.png" type="image/png" />
 		<link rel="canonical" href="https://advokat-makyzhanov.kz/" />
-
 		<link rel="alternate" hreflang="ru" href="https://advokat-makyzhanov.kz/" />
 		<link
 			rel="alternate"
 			hreflang="kk"
 			href="https://advokat-makyzhanov.kz/?lang=kz"
 		/>
+		<link rel="stylesheet" href="styles.css" />
 		<link
 			rel="alternate"
 			hreflang="en"
 			href="https://advokat-makyzhanov.kz/?lang=en"
 		/>
+		
+		<!-- Load Swiper CSS early for faster rendering -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+		
 		<script src="https://cdn.tailwindcss.com"></script>
-		<link rel="icon" href="./images/icons/icon.png" type="image/png" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-		/>
+		
+		<!-- Load Swiper JS with high priority -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-		<link rel="stylesheet" href="styles.css" />
+		
+		<!-- Register Service Worker for caching -->
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker.register('./sw.js')
+						.then(registration => {
+							console.log('SW registered: ', registration);
+						})
+						.catch(registrationError => {
+							console.log('SW registration failed: ', registrationError);
+						});
+				});
+			}
+		</script>
+		
 	</head>
 	<body class="text-white min-h-screen">
 		<!-- Header -->
@@ -831,8 +851,8 @@
 								АБ
 							</div>
 							<div class="ml-4">
-								<h4 class="font-bold text-gray-800">Александр Бадров</h4>
-								<span class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</s>
+								<h2 class="font-bold text-gray-800">Александр Бадров</h2>
+								<span class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</span>
 							</div>
 						</div>
 						<p class="text-gray-700 leading-relaxed">
@@ -854,8 +874,8 @@
 								АК
 							</div>
 							<div class="ml-4">
-								<h4 class="font-bold text-gray-800">Алмаз Калмыков</h4>
-								<div class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</div>
+								<h2 class="font-bold text-gray-800">Алмаз Калмыков</h2>
+								<span class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</span>
 							</div>
 						</div>
 						<p class="text-gray-700 leading-relaxed">
@@ -877,8 +897,8 @@
 								П2
 							</div>
 							<div class="ml-4">
-								<h4 class="font-bold text-gray-800">Пользователь 2ГИС</h4>
-								<div class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</div>
+								<h2 class="font-bold text-gray-800">Пользователь 2ГИС</h2>
+								<span class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</span>
 							</div>
 						</div>
 						<p class="text-gray-700 leading-relaxed">
@@ -901,8 +921,8 @@
 								DA
 							</div>
 							<div class="ml-4">
-								<h4 class="font-bold text-gray-800">Dinmukhamed Aben</h4>
-								<div class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</div>
+								<h2 class="font-bold text-gray-800">Dinmukhamed Aben</h2>
+								<span class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</span>
 							</div>
 						</div>
 						<p class="text-gray-700 leading-relaxed">
@@ -922,8 +942,8 @@
 								РИ
 							</div>
 							<div class="ml-4">
-								<h4 class="font-bold text-gray-800">Рамиль Исламов</h4>
-								<div class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</div>
+								<h2 class="font-bold text-gray-800">Рамиль Исламов</h2>
+								<span class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</span>
 							</div>
 						</div>
 						<p class="text-gray-700 leading-relaxed">
@@ -945,8 +965,8 @@
 								АК
 							</div>
 							<div class="ml-4">
-								<h4 class="font-bold text-gray-800">Анонимный клиент</h4>
-								<div class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</div>
+								<h2 class="font-bold text-gray-800">Анонимный клиент</h2>
+								<span class="flex text-yellow-400 mt-1">⭐⭐⭐⭐⭐</s>
 							</div>
 						</div>
 						<p class="text-gray-700 leading-relaxed">
@@ -989,7 +1009,6 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- Organizations Section -->
 		<section class="py-16 px-4 bg-gray-50">
 			<div class="max-w-[1250px] mx-auto">
@@ -1009,7 +1028,7 @@
 							class="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center"
 						>
 							<img
-								src="./images/icons/prokuratura_astana.png"
+								src="./images/icons/prokuratura_astana.webp"
 								alt="Прокуратура РК"
 								class="w-16 h-16 object-contain"
 							/>
@@ -1036,7 +1055,7 @@
 							class="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center"
 						>
 							<img
-								src="./images/icons/verhovnyi_sud_astana.png"
+								src="./images/icons/verhovnyi_sud_astana.webp"
 								alt="Верховный суд РК"
 								class="w-16 h-16 object-contain"
 							/>
@@ -1063,7 +1082,7 @@
 							class="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center"
 						>
 							<img
-								src="./images/icons/hJg1nqRB_400x400-removebg-preview.png"
+								src="./images/icons/kz_mvd.webp"
 								alt="МВД РК"
 								class="w-16 h-16 object-contain"
 							/>
@@ -1087,7 +1106,7 @@
 							class="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center"
 						>
 							<img
-								src="./images/icons/770px-Emblema_KNB_RK.png"
+								src="./images/icons/kz_knb.webp"
 								alt="КНБ РК"
 								class="w-16 h-16 object-contain"
 							/>
@@ -1111,7 +1130,7 @@
 							class="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center"
 						>
 							<img
-								src="./images/icons/3139d3c9c45dc5ec89043d78f029f812_original.639150.png"
+								src="./images/icons/kz_qarjy_mon.webp"
 								alt="ДЭР РК"
 								class="w-16 h-16 object-contain"
 							/>
@@ -1138,7 +1157,7 @@
 							class="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center"
 						>
 							<img
-								src="./images/icons/711px-Gerb_Agentstva_RK_po_protivodejstviju_korrupcii.png"
+								src="./images/icons/kz_antikor.webp"
 								alt="Агентство РК по противодействию коррупции"
 								class="w-16 h-16 object-contain"
 							/>
@@ -1159,9 +1178,7 @@
 				</div>
 			</div>
 		</section>
-		<iframe id="map_49098801" frameborder="0" width="100%" height="400px" src="https://makemap.2gis.ru/widget?data=eJyVUtuO2jAQ_Rf3kWh3sjHkIu0DdVRgO0KYbtWm1T4gYmW9ChglJhQQ_96ZkH5ALUUje845cyYzV-Ga0jSmnBm3M76xphXZ76vw54MRmfhiNv7YGBGIQ-MOpvF9_iq2rnYN5T9Bfyjvra-ZAS-59kt1Boz10asTFIsKXi66XaoJFJ32_IaR7rw6L5Zqg15ZrJ6fSaI07baxB2_dnoRW8-nof8UAc92VA-4r6mOqQihWui055rrl-4AH_Fi_nyXpPa6rpRpB8ap9OfsMxVwf-U44qhNDcSHNGQJ-r6CIGSsBXwkzmwP-XFclecEP7b_l6yolPnYU1QWwqgDZb0M6syl7o_q9X-opRJvrmu_FnrUU4JTwj7qz-cCP2T_5wKH-qaUeT1y76z1EzCO_yJ5IB9k39RWtbaoSwkr6Ln3fS_XEPIpp359n_qniN19Sj_zflEwwmo5oEJfFvjR_RBbCv3MLRHVfkDOPf9iOlbN7T_itoyWy-43vlyeOHiBOwjQJZPqQhFLG8o34thTZ5Ene3gKx2xxWrrX3QV9FvfEiu2PHkEI4Gacgo3Egas7f5STIyUSmaRSRPed2ZC4hUVoYV9c_3o2pf_Wvvjma219w_96S" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
-
-		<!-- Footer -->
+		<iframe id="map_49098801" title='mapOfCompany' frameborder="0" width="100%" height="400px" src="https://makemap.2gis.ru/widget?data=eJyVUtuO2jAQ_Rf3kWh3sjHkIu0DdVRgO0KYbtWm1T4gYmW9ChglJhQQ_96ZkH5ALUUje845cyYzV-Ga0jSmnBm3M76xphXZ76vw54MRmfhiNv7YGBGIQ-MOpvF9_iq2rnYN5T9Bfyjvra-ZAS-59kt1Boz10asTFIsKXi66XaoJFJ32_IaR7rw6L5Zqg15ZrJ6fSaI07baxB2_dnoRW8-nof8UAc92VA-4r6mOqQihWui055rrl-4AH_Fi_nyXpPa6rpRpB8ap9OfsMxVwf-U44qhNDcSHNGQJ-r6CIGSsBXwkzmwP-XFclecEP7b_l6yolPnYU1QWwqgDZb0M6syl7o_q9X-opRJvrmu_FnrUU4JTwj7qz-cCP2T_5wKH-qaUeT1y76z1EzCO_yJ5IB9k39RWtbaoSwkr6Ln3fS_XEPIpp359n_qniN19Sj_zflEwwmo5oEJfFvjR_RBbCv3MLRHVfkDOPf9iOlbN7T_itoyWy-43vlyeOHiBOwjQJZPqQhFLG8o34thTZ5Ene3gKx2xxWrrX3QV9FvfEiu2PHkEI4Gacgo3Egas7f5STIyUSmaRSRPed2ZC4hUVoYV9c_3o2pf_Wvvjma219w_96S" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
 		<footer class="bg-slate-700 text-white py-12 px-4">
 			<div class="max-w-[1250px] mx-auto">
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -1302,6 +1319,7 @@
 		</footer>
 
 		<script src="./js/translations.js"></script>
+		<script src="./js/swiper-optimizer.js"></script>
 		<script src="./js/team.js"></script>
 		<script src="./js/services.js"></script>
 		<script src="./js/app.js"></script>

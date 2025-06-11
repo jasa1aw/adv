@@ -6,7 +6,7 @@ const teamMembers = [
 			en: 'Makzyanov Kanat Tleubergenovich',
 			kz: 'Макыжанов Канат Тлеубергенович',
 		},
-		image: '../images/team/Makyzhanov_K.png',
+		image: '../images/team/Makyzhanov_K.webp',
 		description: {
 			ru: 'Ведущий адвокат СНГ с безупречной репутацией. Получив образование в Казахстане, достиг международного признания как топ-специалист в области уголовного права.',
 			en: 'Leading CIS lawyer with an impeccable reputation. Having received education in Kazakhstan, achieved international recognition as a top specialist in criminal law.',
@@ -44,7 +44,7 @@ const teamMembers = [
 			en: 'Tuganbayev Zhassulan Tyshkanbayuly',
 			kz: 'Туганбаев Жасулан Тышканбайулы',
 		},
-		image: '../images/team/Tuganbayev_Z.png',
+		image: '../images/team/Tuganbayev_Z.webp',
 		description: {
 			ru: 'Имею обширный опыт работы в судебной системе и правоохранительных органах. За годы профессиональной деятельности работал в Министерстве юстиции, Верховном суде и входил в руководящий состав при Комитете судебного администрирования при Верховном суде РК.',
 			en: 'I have extensive experience in the judicial system and law enforcement agencies. During my professional career, I worked at the Ministry of Justice, the Supreme Court and was part of the management of the Committee for Judicial Administration under the Supreme Court of the Republic of Kazakhstan.',
@@ -77,7 +77,7 @@ const teamMembers = [
 			en: 'Bekzatov Kuat Kakimovich',
 			kz: 'Бекзатов Куат Какимович',
 		},
-		image: '../images/team/Bekzatov_K.png',
+		image: '../images/team/Bekzatov_K.webp',
 		description: {
 			ru: 'За 20 лет работы в органах прокуратуры прошел путь от рядового прокурора до специалиста высшей категории. Мой профессиональный опыт включает работу консультационным прокурором и специальным прокурором по расследованию уголовных дел.',
 			en: "During 20 years of work in the prosecutor's office, I went from an ordinary prosecutor to a specialist of the highest category. My professional experience includes working as a consulting prosecutor and special prosecutor for criminal case investigation.",
