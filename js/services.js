@@ -2,32 +2,32 @@ const servicesData = [
   {
     id: 'criminal',
     titleKey: 'criminalCases',
-    color: 'bg-[#352927]'
+    color: 'bg-gradient-to-br from-[#f59e0b] to-[#fbbf24]'
   },
   {
     id: 'civil',
     titleKey: 'civilCases',
-    color: 'bg-[#372825]'
+    color: 'bg-gradient-to-br from-[#d97706] to-[#f59e0b]'
   },
   {
     id: 'labor',
     titleKey: 'laborDisputes',
-    color: 'bg-[#2b211f]'
+    color: 'bg-gradient-to-br from-[#f59e0b] to-[#fbbf24]'
   },
   {
     id: 'international',
     titleKey: 'internationalCases',
-    color: 'bg-[#291c0e]'
+    color: 'bg-gradient-to-br from-[#d97706] to-[#f59e0b]'
   },
   {
     id: 'housing',
     titleKey: 'housingDisputes',
-    color: 'bg-[#a78d78]'
+    color: 'bg-gradient-to-br from-[#f59e0b] to-[#fbbf24]'
   },
   {
     id: 'inheritance',
     titleKey: 'inheritanceDisputes',
-    color: 'bg-[#b2a28e]'
+    color: 'bg-gradient-to-br from-[#d97706] to-[#f59e0b]'
   },
   {
     id: 'foreigner',
@@ -37,11 +37,11 @@ const servicesData = [
   {
     id: 'construction',
     titleKey: 'constructionDisputes',
-    color: 'bg-[#374151]'
+    color: 'bg-gradient-to-br from-[#d97706] to-[#f59e0b]'
   },
   {
     id: 'dtp',
     titleKey: 'dtpHelp',
-    color: 'bg-[#374151]'
+    color: 'bg-gradient-to-br from-[#f59e0b] to-[#fbbf24]'
   }
 ]; 
