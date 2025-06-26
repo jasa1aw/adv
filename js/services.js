@@ -2,27 +2,27 @@ const servicesData = [
   {
     id: 'criminal',
     titleKey: 'criminalCases',
-    color: 'bg-[#374151]'
+    color: 'bg-[#352927]'
   },
   {
     id: 'civil',
     titleKey: 'civilCases',
-    color: 'bg-[#374151]'
+    color: 'bg-[#372825]'
   },
   {
     id: 'labor',
     titleKey: 'laborDisputes',
-    color: 'bg-[#374151]'
+    color: 'bg-[#2b211f]'
   },
   {
     id: 'international',
     titleKey: 'internationalCases',
-    color: 'bg-[#374151]'
+    color: 'bg-[#291c0e]'
   },
   {
     id: 'housing',
     titleKey: 'housingDisputes',
-    color: 'bg-[#374151]'
+    color: 'bg-[#a78d78]'
   },
   {
     id: 'inheritance',
