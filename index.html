@@ -179,50 +179,14 @@
 
 				<!-- Contact Info and Language Switcher -->
 				<div class="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
-					<!-- Contact Info -->
-					<div
-						class="flex flex-col lg:flex-row items-center gap-4 lg:gap-8 text-sm"
-					>
-						<div class="flex items-center space-x-2 text-gray-600">
-							<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-								<path
-									fill-rule="evenodd"
-									d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-									clip-rule="evenodd"
-								></path>
-							</svg>
-							<span data-translate="address">г. Караганда, ул. Чкалова 1</span>
-						</div>
-						<div
-							class="flex items-center space-x-2 text-gray-800 font-semibold"
-						>
-							<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-								<path
-									d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-								></path>
-							</svg>
-							<span>8 (700) 292-95-73</span>
-						</div>
-					</div>
-
 					<!-- Language Dropdown -->
 					<div class="lang-dropdown">
 						<div class="lang-trigger">
-							<span class="current-lang-flag text-lg">🇷🇺</span>
+							<span class="current-lang-flag text-lg"></span>
 							<span class="current-lang-name text-sm font-medium text-gray-700"
 								>Русский</span
 							>
-							<svg
-								class="w-4 h-4 text-gray-500"
-								fill="currentColor"
-								viewBox="0 0 20 20"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-									clip-rule="evenodd"
-								></path>
-							</svg>
+							<img src="./images/icons/chevronDown.svg" alt="arrow-down" class="w-4 h-4">
 						</div>
 						<div class="lang-menu hidden">
 							<div class="lang-option" data-lang="ru">
@@ -675,56 +639,31 @@
 					class="text-3xl lg:text-4xl font-bold text-gray-800 mb-8 text-center"
 					data-translate="aboutCompany"
 				>
-					О компании
+					О конторе
 				</h2>
 
-				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-					<div class="space-y-6">
-						<p
-							class="text-gray-700 leading-relaxed"
-							data-translate="aboutText1"
-						>
-							Наша адвокатская контора предоставляет высококвалифицированные
-							юридические услуги, сочетая многолетний опыт и глубокие знания
-							законодательства. Мы специализируемся на защите интересов наших
-							клиентов в самых сложных правовых вопросах, предлагая эффективные
-							и индивидуальные решения.
-						</p>
+				<div class="grid grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
+					<p
+						class="text-gray-700 leading-relaxed"
+						data-translate="aboutText1"
+					>
+						Наша адвокатская контора предоставляет высококвалифицированные
+						юридические услуги, сочетая многолетний опыт и глубокие знания
+						законодательства. Мы специализируемся на защите интересов наших
+						клиентов в самых сложных правовых вопросах, предлагая эффективные
+						и индивидуальные решения.
+					</p>
 
-						<p
-							class="text-gray-700 leading-relaxed"
-							data-translate="aboutText2"
-						>
-							Команда профессионалов нашего офиса имеет богатый опыт работы в
-							различных отраслях права, таких как гражданское, административное,
-							уголовное право, а также коммерческое право. Мы гордимся своей
-							репутацией надежных партнеров, способных успешно представлять
-							интересы как частных лиц, так и корпоративных клиентов.
-						</p>
-					</div>
-
-					<div class="flex items-center">
-						<div
-							class="bg-gradient-to-br from-gray-600 to-gray-700 p-8 rounded-2xl shadow-lg"
-						>
-							<h3
-								class="text-xl font-bold text-white mb-4"
-								data-translate="ourMission"
-							>
-								Наша миссия
-							</h3>
-							<p
-								class="text-white leading-relaxed"
-								data-translate="aboutMission"
-							>
-								Наша миссия – обеспечение юридической безопасности клиентов и
-								достижение справедливости через тщательный анализ и
-								стратегический подход к каждому делу. Мы стремимся выстроить
-								долгосрочные доверительные отношения, основываясь на
-								профессионализме, этике и индивидуальном подходе.
-							</p>
-						</div>
-					</div>
+					<p
+						class="text-gray-700 leading-relaxed"
+						data-translate="aboutText2"
+					>
+						Команда профессионалов нашего офиса имеет богатый опыт работы в
+						различных отраслях права, таких как гражданское, административное,
+						уголовное право, а также коммерческое право. Мы гордимся своей
+						репутацией надежных партнеров, способных успешно представлять
+						интересы как частных лиц, так и корпоративных клиентов.
+					</p>
 				</div>
 			</div>
 		</section>
@@ -754,9 +693,8 @@
 					class="text-3xl lg:text-4xl font-bold text-gray-800 mb-12 text-center"
 					data-translate="ourTeam"
 				>
-					
+					Наша команда
 				</h2>
-
 				<div id="teamContainer" class="space-y-12">
 					<!-- Team members will be rendered here by JavaScript -->
 				</div>
@@ -1000,7 +938,7 @@
 						</p>
 						<button
 							data-scroll="home"
-							class="btn-gradient text-gray-900 font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 text-lg cursor-pointer"
+							class="bg-[#059669] text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 text-lg cursor-pointer"
 							data-translate="getConsultation"
 						>
 							Получить консультацию
@@ -1033,10 +971,7 @@
 								class="w-16 h-16 object-contain"
 							/>
 						</div>
-						<h3
-							class="text-lg font-bold text-gray-800 mb-2"
-							data-translate="prosecutorOffice"
-						>
+						<h3 class="text-lg font-bold text-gray-800 mb-2" data-translate="prosecutorOffice" >
 							Прокуратура
 						</h3>
 						<p
@@ -1060,10 +995,7 @@
 								class="w-16 h-16 object-contain"
 							/>
 						</div>
-						<h3
-							class="text-lg font-bold text-gray-800 mb-2"
-							data-translate="supremeCourt"
-						>
+						<h3 class="text-lg font-bold text-gray-800 mb-2" data-translate="supremeCourt" >
 							Верховный суд
 						</h3>
 						<p
@@ -1087,10 +1019,7 @@
 								class="w-16 h-16 object-contain"
 							/>
 						</div>
-						<h3
-							class="text-lg font-bold text-gray-800 mb-2"
-							data-translate="ministry"
-						>
+						<h3 class="text-lg font-bold text-gray-800 mb-2" data-translate="ministry">
 							Министерство
 						</h3>
 						<p class="text-sm text-gray-600" data-translate="ministrySubtitle">
@@ -1111,10 +1040,7 @@
 								class="w-16 h-16 object-contain"
 							/>
 						</div>
-						<h3
-							class="text-lg font-bold text-gray-800 mb-2"
-							data-translate="committee"
-						>
+						<h3 class="text-lg font-bold text-gray-800 mb-2" data-translate="committee">
 							Комитет
 						</h3>
 						<p class="text-sm text-gray-600" data-translate="committeeSubtitle">
@@ -1179,7 +1105,7 @@
 			</div>
 		</section>
 		<iframe id="map_49098801" title='mapOfCompany' frameborder="0" width="100%" height="400px" src="https://makemap.2gis.ru/widget?data=eJyVUtuO2jAQ_Rf3kWh3sjHkIu0DdVRgO0KYbtWm1T4gYmW9ChglJhQQ_96ZkH5ALUUje845cyYzV-Ga0jSmnBm3M76xphXZ76vw54MRmfhiNv7YGBGIQ-MOpvF9_iq2rnYN5T9Bfyjvra-ZAS-59kt1Boz10asTFIsKXi66XaoJFJ32_IaR7rw6L5Zqg15ZrJ6fSaI07baxB2_dnoRW8-nof8UAc92VA-4r6mOqQihWui055rrl-4AH_Fi_nyXpPa6rpRpB8ap9OfsMxVwf-U44qhNDcSHNGQJ-r6CIGSsBXwkzmwP-XFclecEP7b_l6yolPnYU1QWwqgDZb0M6syl7o_q9X-opRJvrmu_FnrUU4JTwj7qz-cCP2T_5wKH-qaUeT1y76z1EzCO_yJ5IB9k39RWtbaoSwkr6Ln3fS_XEPIpp359n_qniN19Sj_zflEwwmo5oEJfFvjR_RBbCv3MLRHVfkDOPf9iOlbN7T_itoyWy-43vlyeOHiBOwjQJZPqQhFLG8o34thTZ5Ene3gKx2xxWrrX3QV9FvfEiu2PHkEI4Gacgo3Egas7f5STIyUSmaRSRPed2ZC4hUVoYV9c_3o2pf_Wvvjma219w_96S" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
-		<footer class="bg-slate-700 text-white py-12 px-4">
+		<footer class="bg-[#1f2937] text-white py-12 px-4">
 			<div class="max-w-[1250px] mx-auto">
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 					<!-- Logo and Description -->
@@ -1311,8 +1237,7 @@
 				<!-- Copyright -->
 				<div class="border-t border-gray-600 mt-8 pt-8 text-center">
 					<p class="text-gray-400 text-sm" data-translate="footerCopyright">
-						2024 © АДВОКАТ МАЛЮЧЕНКО А.А. Адвокатская контора. Адвокат в
-						Караганде.
+							2024 © АДВОКАТ МАЛЮЧЕНКО А.А. Адвокатская контора.
 					</p>
 				</div>
 			</div>

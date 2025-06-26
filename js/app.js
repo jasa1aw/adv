@@ -66,7 +66,7 @@ function initCounterAnimation() {
 
 // Language switching
 function initLanguageSwitcher() {
-	const dropdown = document.querySelector('.lang-dropdown')
+	// const dropdown = document.querySelector('.lang-dropdown')
 	const trigger = document.querySelector('.lang-trigger')
 	const menu = document.querySelector('.lang-menu')
 	const options = document.querySelectorAll('.lang-option')
@@ -174,48 +174,80 @@ function renderTeam() {
           
           <!-- Content Section -->
           <div class="lg:w-3/5 p-6 lg:p-8 flex flex-col justify-center">
-            <h3 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">${
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">${
 							member.name[currentLang]
-						}</h3>
+						}</h2>
             
             <p class="text-gray-700 mb-6 leading-relaxed text-base lg:text-lg">${
 							member.description[currentLang]
 						}</p>
             
+            ${
+							member.experience
+								? `
+            <div class="mb-6">
+              <h4 class="text-lg font-bold text-gray-800 mb-3">${translations[currentLang].experience}</h4>
+              <p class="text-gray-700 leading-relaxed text-base">${member.experience[currentLang]}</p>
+            </div>
+            `
+								: ''
+						}
+            
+            ${
+							member.advantages
+								? `
+            <div class="mb-6">
+              <h4 class="text-lg font-bold text-gray-800 mb-3">${translations[currentLang].advantages}</h4>
+              <p class="text-gray-700 leading-relaxed text-base">${member.advantages[currentLang]}</p>
+            </div>
+            `
+								: ''
+						}
+            
+            ${
+							member.expertise ||
+							member.individualApproach ||
+							member.confidentiality ||
+							member.rightsProtection
+								? `
             <div class="mb-6">
               <h4 class="text-lg font-bold text-gray-800 mb-4">${
 								translations[currentLang].whyChoose
 							}</h4>
               
               <div class="space-y-3">
+                ${
+									member.expertise
+										? `
                 <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <strong class="text-gray-800">${
-											translations[currentLang].expertise
-										}</strong>
-                    <span class="text-gray-700 ml-1">${
-											member.expertise[currentLang]
-										}</span>
+                    <strong class="text-gray-800">${translations[currentLang].expertise}</strong>
+                    <span class="text-gray-700 ml-1">${member.expertise[currentLang]}</span>
                   </div>
                 </div>
+                `
+										: ''
+								}
                 
+                ${
+									member.individualApproach
+										? `
                 <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <strong class="text-gray-800">${
-											translations[currentLang].individualApproach
-										}</strong>
-                    <span class="text-gray-700 ml-1">${
-											member.individualApproach[currentLang]
-										}</span>
+                    <strong class="text-gray-800">${translations[currentLang].individualApproach}</strong>
+                    <span class="text-gray-700 ml-1">${member.individualApproach[currentLang]}</span>
                   </div>
                 </div>
+                `
+										: ''
+								}
                 
                 ${
 									member.confidentiality
 										? `<div class="flex items-start space-x-3">
-                    <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <strong class="text-gray-800">${translations[currentLang].confidentiality}</strong>
                       <span class="text-gray-700 ml-1">${member.confidentiality[currentLang]}</span>
@@ -227,7 +259,7 @@ function renderTeam() {
                 ${
 									member.rightsProtection
 										? `<div class="flex items-start space-x-3">
-                    <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <strong class="text-gray-800">${translations[currentLang].rightsProtection}</strong>
                       <span class="text-gray-700 ml-1">${member.rightsProtection[currentLang]}</span>
@@ -237,6 +269,19 @@ function renderTeam() {
 								}
               </div>
             </div>
+            `
+								: ''
+						}
+            
+            ${
+							member.consultation
+								? `
+            <div class="mb-6">
+              <p class="text-gray-700 italic text-base">${member.consultation[currentLang]}</p>
+            </div>
+            `
+								: ''
+						}
             
             <p class="text-gray-700 mb-6 text-base">${
 							translations[currentLang].contactToday

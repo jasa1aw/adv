@@ -22,19 +22,19 @@ const translations = {
 		individualApproach: 'Индивидуальный подход:',
 		confidentiality: 'Конфиденциальность:',
 		rightsProtection: 'Защита Ваших прав:',
+		experience: 'Опыт работы:',
+		advantages: 'Профессиональные преимущества:',
 		contactToday:
 			'Свяжитесь со мной уже сегодня для предварительной консультации.',
 		whatsapp: 'WhatsApp',
 		email: 'Email',
 		// About Company
-		aboutCompany: 'О компании',
+		aboutCompany: 'О конторе',
 		aboutText1:
 			'Наша адвокатская контора предоставляет высококвалифицированные юридические услуги, сочетая многолетний опыт и глубокие знания законодательства. Мы специализируемся на защите интересов наших клиентов в самых сложных правовых вопросах, предлагая эффективные и индивидуальные решения.',
 		aboutText2:
 			'Команда профессионалов нашего офиса имеет богатый опыт работы в различных отраслях права, таких как гражданское, административное, уголовное право, а также коммерческое право. Мы гордимся своей репутацией надежных партнеров, способных успешно представлять интересы как частных лиц, так и корпоративных клиентов.',
-		aboutMission:
-			'Наша миссия – обеспечение юридической безопасности клиентов и достижение справедливости через тщательный анализ и стратегический подход к каждому делу. Мы стремимся выстроить долгосрочные доверительные отношения, основываясь на профессионализме, этике и индивидуальном подходе.',
-		// Our Services
+		
 		ourServices: 'Наши услуги',
 		criminalCases: 'Уголовные дела',
 		civilCases: 'Гражданские дела',
@@ -74,8 +74,7 @@ const translations = {
 		footerCompanyType: 'Адвокатская контора',
 		footerDescription:
 			'Если Вам нужен опытный адвокат и квалифицированная юридическая помощь, тогда не стоит медлить и минуты, ведь от этого зависит Ваша репутация или свобода.',
-		footerCopyright:
-			'2024 © АДВОКАТ Макыжанов К.Т. Адвокатская контора. Адвокат в Караганде.',
+		footerCopyright: '2024 © АДВОКАТ Макыжанов К.Т. Адвокатская контора.',
 		// Carousel translations
 		criminalMainTitle: 'УГОЛОВНЫЕ ДЕЛА',
 		criminalSubTitle: 'ЗАЩИТА ВАШИХ ПРАВ',
@@ -110,8 +109,6 @@ const translations = {
 		civilFormTitle1: 'Решим любой',
 		civilFormTitle2: 'гражданский спор',
 		civilMessagePlaceholder: 'Расскажите о вашем споре...',
-		// Mission block
-		ourMission: 'Наша миссия',
 		// Reviews section
 		becomeNextClient: 'Станьте следующим довольным клиентом!',
 		joinHappyClients:
@@ -154,18 +151,18 @@ const translations = {
 		individualApproach: 'Individual approach:',
 		confidentiality: 'Confidentiality:',
 		rightsProtection: 'Protection of your rights:',
+		experience: 'Work experience:',
+		advantages: 'Professional advantages:',
 		contactToday: 'Contact me today for a preliminary consultation.',
 		whatsapp: 'WhatsApp',
 		email: 'Email',
 		// About Company
-		aboutCompany: 'About Company',
+		aboutCompany: 'About the office',
 		aboutText1:
 			'Our law firm provides highly qualified legal services, combining years of experience and deep knowledge of legislation. We specialize in protecting the interests of our clients in the most complex legal issues, offering effective and individual solutions.',
 		aboutText2:
 			'The team of professionals in our office has extensive experience in various areas of law, such as civil, administrative, criminal law, as well as commercial law. We are proud of our reputation as reliable partners, capable of successfully representing the interests of both private individuals and corporate clients.',
-		aboutMission:
-			'Our mission is to ensure the legal security of clients and achieve justice through thorough analysis and a strategic approach to each case. We strive to build long-term trusting relationships based on professionalism, ethics and an individual approach.',
-		// Our Services
+		
 		ourServices: 'Our Services',
 		criminalCases: 'Criminal Cases',
 		civilCases: 'Civil Cases',
@@ -205,8 +202,7 @@ const translations = {
 		footerCompanyType: 'Law firm',
 		footerDescription:
 			'If you need an experienced lawyer and qualified legal assistance, then you should not hesitate for a minute, because your reputation or freedom depends on it.',
-		footerCopyright:
-			'2024 © LAWYER Makyjanov K.T. Law firm. Lawyer in Karaganda.',
+		footerCopyright: '2024 © LAWYER Makyjanov K.T. Law firm.',
 		// Carousel translations
 		criminalMainTitle: 'CRIMINAL CASES',
 		criminalSubTitle: 'PROTECTION OF YOUR RIGHTS',
@@ -243,8 +239,6 @@ const translations = {
 		civilFormTitle1: 'We will resolve any',
 		civilFormTitle2: 'civil dispute',
 		civilMessagePlaceholder: 'Tell us about your dispute...',
-		// Mission block
-		ourMission: 'Our Mission',
 		// Reviews section
 		becomeNextClient: 'Become our next satisfied client!',
 		joinHappyClients:
@@ -287,18 +281,17 @@ const translations = {
 		individualApproach: 'Жеке тәсіл:',
 		confidentiality: 'Құпиялылық:',
 		rightsProtection: 'Сіздің құқықтарыңызды қорғау:',
+		experience: 'Жұмыс тәжірибесі:',
+		advantages: 'Кәсіби артықшылықтар:',
 		contactToday: 'Алдын ала кеңес үшін бүгін маған хабарласыңыз.',
 		whatsapp: 'WhatsApp',
 		email: 'Email',
 		// About Company
-		aboutCompany: 'Компания туралы',
+		aboutCompany: 'Контора туралы',
 		aboutText1:
 			'Біздің адвокаттық кеңсе жоғары білікті заңгерлік қызметтер көрсетеді, көп жылдық тәжірибе мен заңнаманы терең білуді біріктіреді. Біз тиімді және жеке шешімдер ұсына отырып, ең күрделі құқықтық мәселелерде клиенттеріміздің мүдделерін қорғауға маманданамыз.',
 		aboutText2:
 			'Біздің кеңсеміздің кәсіпқойлар командасы азаматтық, әкімшілік, қылмыстық құқық, сондай-ақ коммерциялық құқық сияқты құқықтың әртүрлі салаларында бай тәжірибеге ие. Біз жеке тұлғалар мен корпоративтік клиенттердің мүдделерін сәтті көрсете алатын сенімді серіктестер ретіндегі беделімізбен мақтанамыз.',
-		aboutMission:
-			'Біздің миссиямыз - әрбір іске мұқият талдау және стратегиялық тәсіл арқылы клиенттердің құқықтық қауіпсіздігін қамтамасыз ету және әділеттілікке жету. Біз кәсіпқойлық, этика және жеке тәсілге негізделген ұзақ мерзімді сенімді қарым-қатынас орнатуға тырысамыз.',
-		// Our Services
 		ourServices: 'Біздің қызметтер',
 		criminalCases: 'Қылмыстық істер',
 		civilCases: 'Азаматтық істер',
@@ -338,8 +331,7 @@ const translations = {
 		footerCompanyType: 'Адвокаттық кеңсе',
 		footerDescription:
 			'Егер сізге тәжірибелі адвокат пен білікті заңгерлік көмек керек болса, онда бір минут та кешіктірмеу керек, өйткені сіздің беделіңіз немесе бостандығыңыз осыға байланысты.',
-		footerCopyright:
-			'2024 © АДВОКАТ Макыжанов К.Т. Адвокаттық кеңсе. Қарағандыдағы адвокат.',
+		footerCopyright: '2024 © АДВОКАТ Макыжанов К.Т. Адвокаттық кеңсе.',
 		// Carousel translations
 		criminalMainTitle: 'ҚЫЛМЫСТЫҚ ІСТЕР',
 		criminalSubTitle: 'СІЗДІҢ ҚҰҚЫҚТАРЫҢЫЗДЫ ҚОРҒАУ',
@@ -377,8 +369,6 @@ const translations = {
 		civilFormTitle1: 'Кез келген азаматтық',
 		civilFormTitle2: 'дауды шешеміз',
 		civilMessagePlaceholder: 'Сіздің дауыңыз туралы айтыңыз...',
-		// Mission block
-		ourMission: 'Біздің миссия',
 		// Reviews section
 		becomeNextClient: 'Келесі қанағаттанған клиентіміз болыңыз!',
 		joinHappyClients:

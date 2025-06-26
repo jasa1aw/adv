@@ -38,10 +38,10 @@ body {
 	box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
 }
 
-.btn-gradient:hover {
+/* .btn-gradient:hover {
 	background: linear-gradient(45deg, #d97706, #f59e0b);
 	box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
-}
+} */
 
 .header-bg {
 	background: rgba(255, 255, 255, 0.95);
@@ -96,7 +96,7 @@ body {
 .lang-trigger {
 	display: flex;
 	align-items: center;
-	space-x: 8px;
+	gap: 8px;
 	background: white;
 	border: 1px solid #e5e7eb;
 	border-radius: 8px;
@@ -132,7 +132,7 @@ body {
 .lang-option {
 	display: flex;
 	align-items: center;
-	space-x: 8px;
+	gap: 8px;
 	padding: 6px 12px;
 	cursor: pointer;
 	transition: background 0.2s;
@@ -167,7 +167,7 @@ body {
 .stats-number {
 	font-size: 3rem;
 	font-weight: 800;
-	background: linear-gradient(45deg, #f59e0b, #fbbf24);
+	background: linear-gradient(45deg, #059669, #059669);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;

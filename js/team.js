@@ -8,29 +8,24 @@ const teamMembers = [
 		},
 		image: '../images/team/Makyzhanov_K.webp',
 		description: {
-			ru: 'Ведущий адвокат СНГ с безупречной репутацией. Получив образование в Казахстане, достиг международного признания как топ-специалист в области уголовного права.',
-			en: 'Leading CIS lawyer with an impeccable reputation. Having received education in Kazakhstan, achieved international recognition as a top specialist in criminal law.',
-			kz: 'ТМД-ның жетекші заңгері, мінсіз беделі бар. Қазақстанда білім алып, қылмыстық құқық саласындағы топ-маман ретінде халықаралық танылуға жетті.',
+			ru: 'Международный эксперт по уголовному праву<br/>Профессиональный статус',
+			en: 'International expert in criminal law<br/>Professional status',
+			kz: 'Қылмыстық құқық бойынша халықаралық сарапшы<br/>Кәсіби мәртебе',
 		},
-		expertise: {
-			ru: 'Международный эксперт по уголовному праву. Ведет дела особой сложности, включая международные споры и экономические преступления. Консультант правительств стран СНГ.',
-			en: 'International expert in criminal law. Handles cases of particular complexity, including international disputes and economic crimes. Consultant to CIS governments.',
-			kz: 'Қылмыстық құқық бойынша халықаралық сарапшы. Халықаралық дауларды және экономикалық қылмыстарды қоса алғанда, ерекше күрделі істерді жүргізеді. ТМД үкіметтерінің кеңесшісі.',
+		experience: {
+			ru: 'Ведущий адвокат СНГ<br/>Международный эксперт по уголовному праву<br/>Консультант правительств стран СНГ<br/>Обладатель международных наград в юриспруденции',
+			en: 'Leading CIS lawyer<br/>International expert in criminal law<br/>Consultant to CIS governments<br/>Holder of international awards in jurisprudence',
+			kz: 'ТМД-ның жетекші заңгері<br/>Қылмыстық құқық бойынша халықаралық сарапшы<br/>ТМД үкіметтерінің кеңесшісі<br/>Заң ғылымы саласындағы халықаралық сыйлықтардың иегері',
 		},
-		individualApproach: {
-			ru: 'Уникальный подход, сочетающий казахстанскую школу права с мировыми практиками. Разрабатываю эффективные стратегии для достижения выдающихся результатов.',
-			en: 'Unique approach combining Kazakhstani school of law with world practices. I develop effective strategies to achieve outstanding results.',
-			kz: 'Қазақстандық құқық мектебін әлемдік тәжірибелермен ұштастыратын бірегей тәсіл. Керемет нәтижелерге жету үшін тиімді стратегиялар әзірлеймін.',
+		advantages: {
+			ru: 'Международный уровень практики — Сочетание казахстанской правовой школы с мировыми стандартами ведения дел<br/><br/>Сложные дела — Специализация на делах особой сложности, международных спорах и экономических преступлениях<br/><br/>Высокий статус клиентов — Опыт работы с крупными корпорациями, государственными деятелями и VIP-клиентами<br/><br/>Индивидуальные стратегии — Разработка эффективных подходов с учетом международной практики',
+			en: 'International level of practice — Combination of Kazakhstani legal school with world standards of case management<br/><br/>Complex cases — Specialization in cases of particular complexity, international disputes and economic crimes<br/><br/>High status clients — Experience working with large corporations, government officials and VIP clients<br/><br/>Individual strategies — Development of effective approaches taking into account international practice',
+			kz: 'Тәжірибенің халықаралық деңгейі — Қазақстандық құқықтық мектепті істерді жүргізудің әлемдік стандарттарымен ұштастыру<br/><br/>Күрделі істер — Ерекше күрделі істерге, халықаралық дауларға және экономикалық қылмыстарға мамандану<br/><br/>Жоғары мәртебелі клиенттер — Ірі корпорациялармен, мемлекеттік қайраткерлермен және VIP-клиенттермен жұмыс тәжірибесі<br/><br/>Жеке стратегиялар — Халықаралық тәжірибені ескере отырып тиімді тәсілдерді әзірлеу',
 		},
-		confidentiality: {
-			ru: 'Обладатель международных наград в юриспруденции. Клиенты: крупные корпорации, государственные деятели, VIP-персоны.',
-			en: 'Holder of international awards in jurisprudence. Clients: large corporations, government officials, VIP persons.',
-			kz: 'Заң ғылымы саласындағы халықаралық сыйлықтардың иегері. Клиенттер: ірі корпорациялар, мемлекеттік қайраткерлер, VIP-тұлғалар.',
-		},
-		rightsProtection: {
-			ru: 'Я на стороне клиента и готов использовать все законные методы в Вашей защите.',
-			en: "I am on the client's side and ready to use all legal methods in your defense.",
-			kz: 'Мен клиенттің жағындамын және сіздің қорғауыңыз үшін барлық заңды әдістерді қолдануға дайынмын.',
+		consultation: {
+			ru: 'Предварительная консультация по записи',
+			en: 'Preliminary consultation by appointment',
+			kz: 'Алдын ала кеңес беру жазылу арқылы',
 		},
 		contacts: {
 			whatsapp: '+77002929573',
@@ -46,24 +41,24 @@ const teamMembers = [
 		},
 		image: '../images/team/Tuganbayev_Z.webp',
 		description: {
-			ru: 'Имею обширный опыт работы в судебной системе и правоохранительных органах. За годы профессиональной деятельности работал в Министерстве юстиции, Верховном суде и входил в руководящий состав при Комитете судебного администрирования при Верховном суде РК.',
-			en: 'I have extensive experience in the judicial system and law enforcement agencies. During my professional career, I worked at the Ministry of Justice, the Supreme Court and was part of the management of the Committee for Judicial Administration under the Supreme Court of the Republic of Kazakhstan.',
-			kz: 'Сот жүйесі мен құқық қорғау органдарында кең тәжірибем бар. Кәсіби қызмет жылдарында Әділет министрлігінде, Жоғарғы сотта жұмыс істедім және ҚР Жоғарғы сотындағы Сот әкімшілігі комитетінің басшылық құрамына кірдім.',
+			ru: 'Адвокат с опытом работы в судебной системе<br/>Профессиональный опыт: 15 лет',
+			en: 'Lawyer with experience in the judicial system<br/>Professional experience: 15 years',
+			kz: 'Сот жүйесінде жұмыс тәжірибесі бар заңгер<br/>Кәсіби тәжірибе: 15 жыл',
 		},
-		expertise: {
-			ru: '5 лет в Министерстве юстиции и Верховном суде РК, работа в руководящем составе при Комитете судебного администрирования, а также 5 лет опыта в правоохранительных органах. Глубокое понимание судебной системы и процессуальных особенностей.',
-			en: '5 years at the Ministry of Justice and the Supreme Court of the Republic of Kazakhstan, work in the management of the Committee for Judicial Administration, as well as 5 years of experience in law enforcement agencies. Deep understanding of the judicial system and procedural features.',
-			kz: 'ҚР Әділет министрлігі мен Жоғарғы сотында 5 жыл, Сот әкімшілігі комитетінің басшылық құрамында жұмыс, сондай-ақ құқық қорғау органдарында 5 жылдық тәжірибе. Сот жүйесі мен процессуалдық ерекшеліктерді терең түсіну.',
+		experience: {
+			ru: 'Министерство юстиции РК — 5 лет<br/>Верховный суд РК — 5 лет<br/>Руководящий состав при Комитете судебного администрирования<br/>Правоохранительные органы — 5 лет',
+			en: 'Ministry of Justice of the Republic of Kazakhstan — 5 years<br/>Supreme Court of the Republic of Kazakhstan — 5 years<br/>Management team at the Committee for Judicial Administration<br/>Law enforcement agencies — 5 years',
+			kz: 'ҚР Әділет министрлігі — 5 жыл<br/>ҚР Жоғарғы соты — 5 жыл<br/>Сот әкімшілігі комитетінің басшылық құрамы<br/>Құқық қорғау органдары — 5 жыл',
 		},
-		individualApproach: {
-			ru: 'Благодаря уникальному сочетанию опыта работы в судебной системе и правоохранительных органах, я обладаю всесторонним пониманием правовых процессов и могу предложить эффективные решения в самых сложных ситуациях.',
-			en: 'Thanks to a unique combination of experience in the judicial system and law enforcement agencies, I have a comprehensive understanding of legal processes and can offer effective solutions in the most complex situations.',
-			kz: 'Сот жүйесі мен құқық қорғау органдарындағы жұмыс тәжірибесінің бірегей үйлесімі арқасында мен құқықтық процестерді жан-жақты түсінемін және ең күрделі жағдайларда тиімді шешімдер ұсына аламын.',
+		advantages: {
+			ru: 'Системное понимание процессов — Опыт работы в высших судебных инстанциях обеспечивает глубокое понимание судебных процедур<br/><br/>Комплексный подход — Сочетание опыта в судебной системе и правоохранительных органах для всестороннего анализа дел<br/><br/>Профессиональные связи — Многолетняя работа в системе способствует эффективному взаимодействию с судебными органами',
+			en: 'Systematic understanding of processes — Experience in the highest judicial instances ensures deep understanding of judicial procedures<br/><br/>Comprehensive approach — Combination of experience in the judicial system and law enforcement agencies for comprehensive case analysis<br/><br/>Professional connections — Years of work in the system facilitate effective interaction with judicial authorities',
+			kz: 'Процестерді жүйелі түсіну — Жоғары сот инстанцияларында жұмыс тәжірибесі сот процедураларын терең түсінуді қамтамасыз етеді<br/><br/>Кешенді тәсіл — Істерді жан-жақты талдау үшін сот жүйесі мен құқық қорғау органдарындағы тәжірибенің үйлесімі<br/><br/>Кәсіби байланыстар — Жүйеде көп жылдық жұмыс сот органдарымен тиімді өзара іс-қимылға ықпал етеді',
 		},
-		confidentiality: {
-			ru: 'Мой опыт работы в высших судебных инстанциях и государственных органах гарантирует высочайший уровень профессионализма и конфиденциальности при работе с клиентами.',
-			en: 'My experience working in the highest judicial instances and government agencies guarantees the highest level of professionalism and confidentiality when working with clients.',
-			kz: 'Жоғары сот инстанцияларында және мемлекеттік органдарда жұмыс істеу тәжірибем клиенттермен жұмыс істегенде кәсіпқойлық пен құпиялылықтың жоғарғы деңгейін кепілдендіреді.',
+		consultation: {
+			ru: 'Предварительная консультация по записи',
+			en: 'Preliminary consultation by appointment',
+			kz: 'Алдын ала кеңес беру жазылу арқылы',
 		},
 		contacts: {
 			whatsapp: '+77013798180',
@@ -79,29 +74,24 @@ const teamMembers = [
 		},
 		image: '../images/team/Bekzatov_K.webp',
 		description: {
-			ru: 'За 20 лет работы в органах прокуратуры прошел путь от рядового прокурора до специалиста высшей категории. Мой профессиональный опыт включает работу консультационным прокурором и специальным прокурором по расследованию уголовных дел.',
-			en: "During 20 years of work in the prosecutor's office, I went from an ordinary prosecutor to a specialist of the highest category. My professional experience includes working as a consulting prosecutor and special prosecutor for criminal case investigation.",
-			kz: 'Прокуратура органдарында 20 жыл жұмыс істеу барысында қарапайым прокурордан жоғары санаттағы маманға дейінгі жолды өттім. Менің кәсіби тәжірибемде кеңес беруші прокурор және қылмыстық істерді тергеу жөніндегі арнайы прокурор болып жұмыс істеу кіреді.',
+			ru: 'Адвокат с опытом работы в прокуратуре<br/>Профессиональный опыт: 20 лет',
+			en: "Lawyer with experience in the prosecutor's office<br/>Professional experience: 20 years",
+			kz: 'Прокуратурада жұмыс тәжірибесі бар заңгер<br/>Кәсіби тәжірибе: 20 жыл',
 		},
-		expertise: {
-			ru: '20 лет в органах прокуратуры, включая 5 лет консультационным прокурором и 5 лет специальным прокурором по расследованию уголовных дел. Специализируюсь на резонансных делах особой сложности.',
-			en: "20 years in the prosecutor's office, including 5 years as a consulting prosecutor and 5 years as a special prosecutor for criminal case investigation. I specialize in high-profile cases of particular complexity.",
-			kz: 'Прокуратура органдарында 20 жыл, соның ішінде 5 жыл кеңес беруші прокурор және 5 жыл қылмыстық істерді тергеу жөніндегі арнайы прокурор. Ерекше күрделі резонанстық істерге маманданамын.',
+		experience: {
+			ru: 'Специальный прокурор по расследованию уголовных дел — 5 лет<br/>Консультационный прокурор — 5 лет<br/>Специалист высшей категории<br/>Специализация: резонансные дела особой сложности',
+			en: 'Special prosecutor for criminal case investigation — 5 years<br/>Consulting prosecutor — 5 years<br/>Specialist of the highest category<br/>Specialization: high-profile cases of particular complexity',
+			kz: 'Қылмыстық істерді тергеу жөніндегі арнайы прокурор — 5 жыл<br/>Кеңес беруші прокурор — 5 жыл<br/>Жоғары санаттағы маман<br/>Мамандануы: ерекше күрделі резонанстық істер',
 		},
-		individualApproach: {
-			ru: 'Благодаря многолетнему опыту работы в прокуратуре, я досконально знаю особенности ведения сложных уголовных дел и умею находить нестандартные решения в самых трудных ситуациях.',
-			en: "Thanks to many years of experience in the prosecutor's office, I thoroughly know the specifics of handling complex criminal cases and can find non-standard solutions in the most difficult situations.",
-			kz: 'Прокуратурада көп жылдық жұмыс тәжірибесінің арқасында күрделі қылмыстық істерді жүргізудің ерекшеліктерін мүлтіксіз білемін және ең қиын жағдайларда стандартты емес шешімдер табуды білемін.',
+		advantages: {
+			ru: 'Глубокое понимание процесса — Многолетний опыт в органах прокуратуры обеспечивает знание всех этапов уголовного процесса<br/><br/>Работа со сложными делами — Опыт расследования резонансных дел позволяет эффективно защищать интересы клиентов<br/><br/>Нестандартные подходы — Использование накопленного опыта для поиска оптимальных решений в сложных правовых ситуациях',
+			en: "Deep understanding of the process — Years of experience in the prosecutor's office provides knowledge of all stages of the criminal process<br/><br/>Working with complex cases — Experience in investigating high-profile cases allows to effectively protect client interests<br/><br/>Non-standard approaches — Using accumulated experience to find optimal solutions in complex legal situations",
+			kz: 'Процесті терең түсіну — Прокуратура органдарындағы көп жылдық тәжірибе қылмыстық процестің барлық кезеңдерін білуді қамтамасыз етеді<br/><br/>Күрделі істермен жұмыс — Резонанстық істерді тергеу тәжірибесі клиенттердің мүдделерін тиімді қорғауға мүмкіндік береді<br/><br/>Стандартты емес тәсілдер — Күрделі құқықтық жағдайларда оңтайлы шешімдер табу үшін жинақталған тәжірибені пайдалану',
 		},
-		confidentiality: {
-			ru: 'Весь накопленный опыт и знания использую для защиты интересов моих клиентов. Гарантирую полную конфиденциальность и профессиональный подход к каждому делу.',
-			en: 'I use all accumulated experience and knowledge to protect the interests of my clients. I guarantee complete confidentiality and a professional approach to each case.',
-			kz: 'Жинақталған барлық тәжірибе мен білімді клиенттерімнің мүдделерін қорғау үшін пайдаланамын. Толық құпиялылық пен әрбір іске кәсіби көзқарасты кепілдік етемін.',
-		},
-		rightsProtection: {
-			ru: 'Мой богатый опыт расследования резонансных дел позволяет мне эффективно защищать права клиентов и добиваться справедливых решений в самых сложных правовых спорах.',
-			en: "My extensive experience in investigating high-profile cases allows me to effectively protect clients' rights and achieve fair decisions in the most complex legal disputes.",
-			kz: 'Резонанстық істерді тергеу бойынша бай тәжірибем клиенттердің құқықтарын тиімді қорғауға және ең күрделі құқықтық дауларда әділ шешімдерге жетуге мүмкіндік береді.',
+		consultation: {
+			ru: 'Предварительная консультация по записи',
+			en: 'Preliminary consultation by appointment',
+			kz: 'Алдын ала кеңес беру жазылу арқылы',
 		},
 		contacts: {
 			whatsapp: '+77775401001',
