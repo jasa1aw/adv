@@ -27,7 +27,7 @@ const servicesData = [
   {
     id: 'inheritance',
     titleKey: 'inheritanceDisputes',
-    color: 'bg-[#b2a2be]'
+    color: 'bg-[#b2a2b8e]'
   },
   {
     id: 'foreigner',
