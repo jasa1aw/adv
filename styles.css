@@ -5,7 +5,8 @@ body {
 .hero-section,
 .banner-bg-criminal,
 .banner-bg-administrative,
-.banner-bg-civil {
+.banner-bg-civil,
+.banner-bg-appk {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -284,6 +285,12 @@ body {
 .banner-bg-civil {
 	background-image: linear-gradient(rgba(22, 101, 52, 0.7),
 			rgba(21, 128, 61, 0.7)),
+		url('./images/backgroundHero.webp');
+}
+
+.banner-bg-appk {
+	background-image: linear-gradient(rgba(120, 53, 15, 0.7),
+			rgba(146, 64, 14, 0.7)),
 		url('./images/backgroundHero.webp');
 }
 

@@ -299,43 +299,37 @@
 									</h3>
 
 									<form
-										class="space-y-4 lg:space-y-6 consultation-form"
+										class="flex flex-col gap-4 lg:gap-6"
 										data-case-type="criminal"
 									>
 										<div>
+											<label for="fullName" data-translate="fullName" class='ml-3 text-white'>ФИО</label>
 											<input
 												type="text"
-												name="fullName"
-												data-translate-placeholder="fullName"
 												placeholder="ФИО"
-												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 placeholder-gray-500 font-medium"
+												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium"
 												required
 											/>
-											<div class="error-message hidden"></div>
+											<p class="error-message hidden"></p>
 										</div>
-
 										<div>
+											<label for="phone" data-translate="phone" class='ml-3 text-white'>Номер телефона</label>
 											<input
 												type="tel"
-												name="phone"
-												data-translate-placeholder="phone"
 												placeholder="+7 (___) ___ __ __"
-												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 placeholder-gray-500 font-medium"
+												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium"
 												required
 											/>
-											<div class="error-message hidden"></div>
+											<p class="error-message hidden"></p>
 										</div>
-
 										<div>
+											<label for="message" data-translate="message" class='ml-3 text-white'>Расскажите о вашем споре</label>
 											<textarea
 												name="message"
-												data-translate-placeholder="criminalMessagePlaceholder"
-												placeholder="Расскажите о вашей ситуации..."
-												class="w-full p-3 lg:p-4 rounded-2xl bg-white text-gray-800 border-0 placeholder-gray-500 font-medium h-24 lg:h-32 resize-none"
+												class="w-full p-3 lg:p-4 rounded-2xl bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium h-24 lg:h-32 resize-none"
 												required
 											></textarea>
 										</div>
-
 										<button
 											type="submit"
 											class="w-full btn-gradient text-gray-900 font-bold py-3 lg:py-4 px-6 rounded-full transition duration-300 transform hover:scale-105 text-base lg:text-lg uppercase tracking-wide"
@@ -389,14 +383,6 @@
 										<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
 										<span
 											class="text-base lg:text-lg"
-											data-translate="administrativeFeature1"
-											>Обжалование штрафов ГИБДД</span
-										>
-									</div>
-									<div class="flex items-center space-x-3">
-										<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
-										<span
-											class="text-base lg:text-lg"
 											data-translate="administrativeFeature2"
 											>Налоговые споры</span
 										>
@@ -409,12 +395,12 @@
 											>Лицензирование</span
 										>
 									</div>
-									<div class="flex items-center space-x-3">
+									<div class="col-span-2 flex items-center space-x-3">
 										<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
 										<span
 											class="text-base lg:text-lg"
-											data-translate="administrativeFeature4"
-											>Арбитражные споры</span
+											data-translate="administrativeFeature1"
+											>Обжалование штрафов госорганов</span
 										>
 									</div>
 								</div>
@@ -437,43 +423,37 @@
 									</h3>
 
 									<form
-										class="space-y-4 lg:space-y-6 consultation-form"
+										class="flex flex-col gap-4 lg:gap-6"
 										data-case-type="administrative"
 									>
 										<div>
+											<label for="fullName" data-translate="fullName" class='ml-3 text-white'>ФИО</label>
 											<input
 												type="text"
-												name="fullName"
-												data-translate-placeholder="fullName"
 												placeholder="ФИО"
-												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 placeholder-gray-500 font-medium"
+												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium"
 												required
 											/>
-											<div class="error-message hidden"></div>
+											<p class="error-message hidden"></p>
 										</div>
-
 										<div>
+											<label for="phone" data-translate="phone" class='ml-3 text-white'>Номер телефона</label>
 											<input
 												type="tel"
-												name="phone"
-												data-translate-placeholder="phone"
 												placeholder="+7 (___) ___ __ __"
-												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 placeholder-gray-500 font-medium"
+												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium"
 												required
 											/>
-											<div class="error-message hidden"></div>
+											<p class="error-message hidden"></p>
 										</div>
-
 										<div>
+											<label for="message" data-translate="message" class='ml-3 text-white'>Расскажите о вашем споре</label>
 											<textarea
 												name="message"
-												data-translate-placeholder="administrativeMessagePlaceholder"
-												placeholder="Опишите административное нарушение..."
-												class="w-full p-3 lg:p-4 rounded-2xl bg-white text-gray-800 border-0 placeholder-gray-500 font-medium h-24 lg:h-32 resize-none"
+												class="w-full p-3 lg:p-4 rounded-2xl bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium h-24 lg:h-32 resize-none"
 												required
 											></textarea>
 										</div>
-
 										<button
 											type="submit"
 											class="w-full btn-gradient text-gray-900 font-bold py-3 lg:py-4 px-6 rounded-full transition duration-300 transform hover:scale-105 text-base lg:text-lg uppercase tracking-wide"
@@ -537,15 +517,7 @@
 											>Договорные споры</span
 										>
 									</div>
-									<div class="flex items-center space-x-3">
-										<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
-										<span
-											class="text-base lg:text-lg"
-											data-translate="civilFeature3"
-											>Недвижимость</span
-										>
-									</div>
-									<div class="flex items-center space-x-3">
+									<div class="col-span-2 flex items-center space-x-3">
 										<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
 										<span
 											class="text-base lg:text-lg"
@@ -573,43 +545,167 @@
 									</h3>
 
 									<form
-										class="space-y-4 lg:space-y-6 consultation-form"
+										class="flex flex-col gap-4 lg:gap-6"
 										data-case-type="civil"
 									>
 										<div>
+											<label for="fullName" data-translate="fullName" class='ml-3 text-white'>ФИО</label>
 											<input
 												type="text"
-												name="fullName"
-												data-translate-placeholder="fullName"
 												placeholder="ФИО"
 												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium"
 												required
 											/>
-											<div class="error-message hidden"></div>
+											<p class="error-message hidden"></p>
 										</div>
-
 										<div>
+											<label for="phone" data-translate="phone" class='ml-3 text-white'>Номер телефона</label>
 											<input
 												type="tel"
-												name="phone"
-												data-translate-placeholder="phone"
 												placeholder="+7 (___) ___ __ __"
 												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium"
 												required
 											/>
-											<div class="error-message hidden"></div>
+											<p class="error-message hidden"></p>
 										</div>
-
 										<div>
+											<label for="message" data-translate="message" class='ml-3 text-white'>Расскажите о вашем споре</label>
 											<textarea
 												name="message"
-												data-translate-placeholder="civilMessagePlaceholder"
-												placeholder="Расскажите о вашем споре..."
 												class="w-full p-3 lg:p-4 rounded-2xl bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium h-24 lg:h-32 resize-none"
 												required
 											></textarea>
 										</div>
+										<button
+											type="submit"
+											class="w-full btn-gradient text-gray-900 font-bold py-3 lg:py-4 px-6 rounded-full transition duration-300 transform hover:scale-105 text-base lg:text-lg uppercase tracking-wide"
+											data-translate="submitBtn"
+										>
+											ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
 
+					<!-- АППК РК -->
+					<div class="swiper-slide banner-bg-appk">
+						<div
+							class="max-w-[1250px] w-full flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12 px-4"
+						>
+							<!-- Left Content -->
+							<div class="lg:w-3/5 space-y-6 lg:space-y-8">
+								<!-- Main Title -->
+								<div class="space-y-4">
+									<h1
+										class="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight"
+										data-translate="appkMainTitle"
+									>
+										АППК РК 
+									</h1>
+
+									<h2
+										class="text-2xl lg:text-3xl xl:text-4xl font-bold gradient-text"
+										data-translate="appkHeaderText"
+									>
+										АДМИНИСТРАТИВНЫЙ ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ КОДЕКС
+									</h2>
+								</div>
+
+								<!-- Subtitle -->
+								<p
+									class="text-lg lg:text-xl font-medium text-gray-200"
+									data-translate="appkDescription"
+								>
+									Защита прав граждан в административных процедурах и создание правового государства
+								</p>
+
+								<!-- Features -->
+								<div class="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-4">
+									<div class="flex items-center space-x-3">
+										<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+										<span
+											class="text-base lg:text-lg"
+											data-translate="appkFeature1"
+											>Консультации по АППК</span
+										>
+									</div>
+									<div class="flex items-center space-x-3">
+										<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+										<span
+											class="text-base lg:text-lg"
+											data-translate="appkFeature2"
+											>Защита в административных процедурах</span
+										>
+									</div>
+									<div class="flex items-center space-x-3">
+										<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+										<span
+											class="text-base lg:text-lg"
+											data-translate="appkFeature3"
+											>Обжалование решений госорганов</span
+										>
+									</div>
+									<div class="flex items-center space-x-3">
+										<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+										<span
+											class="text-base lg:text-lg"
+											data-translate="appkFeature4"
+											>Повышение качества госуслуг</span
+										>
+									</div>
+								</div>
+							</div>
+
+							<!-- Right Form -->
+							<div class="lg:w-2/5 w-full max-w-md">
+								<div class="form-container p-6 lg:p-8 rounded-3xl shadow-2xl">
+									<h3
+										class="text-xl lg:text-2xl font-bold text-white mb-2 text-center"
+										data-translate="appkFormTitle1"
+									>
+										Получите консультацию
+									</h3>
+									<h3
+										class="text-xl lg:text-2xl font-bold text-white mb-6 lg:mb-8 text-center"
+										data-translate="appkFormTitle2"
+									>
+										по вопросам АППК
+									</h3>
+
+									<form
+										class="flex flex-col gap-4 lg:gap-6"
+										data-case-type="appk"
+									>
+										<div>
+											<label for="fullName" data-translate="fullName" class='ml-3 text-white'>ФИО</label>
+											<input
+												type="text"
+												placeholder="ФИО"
+												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium"
+												required
+											/>
+											<p class="error-message hidden"></p>
+										</div>
+										<div>
+											<label for="phone" data-translate="phone" class='ml-3 text-white'>Номер телефона</label>
+											<input
+												type="tel"
+												placeholder="+7 (___) ___ __ __"
+												class="w-full p-3 lg:p-4 rounded-full bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium"
+												required
+											/>
+											<p class="error-message hidden"></p>
+										</div>
+										<div>
+											<label for="message" data-translate="message" class='ml-3 text-white'>Расскажите о вашем споре</label>
+											<textarea
+												name="message"
+												class="w-full p-3 lg:p-4 rounded-2xl bg-white text-gray-800 border-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500 font-medium h-24 lg:h-32 resize-none"
+												required
+											></textarea>
+										</div>
 										<button
 											type="submit"
 											class="w-full btn-gradient text-gray-900 font-bold py-3 lg:py-4 px-6 rounded-full transition duration-300 transform hover:scale-105 text-base lg:text-lg uppercase tracking-wide"

@@ -14,7 +14,7 @@ const translations = {
 		formTitle2: 'консультацию прямо сейчас',
 		fullName: 'ФИО',
 		phone: 'Номер телефона',
-		message: 'Расскажите что у вас произошло...',
+		message: 'Расскажите что у вас произошло',
 		submitBtn: 'ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ',
 		ourTeam: 'Наша команда',
 		whyChoose: 'Почему стоит выбирать меня?',
@@ -34,7 +34,7 @@ const translations = {
 			'Наша адвокатская контора предоставляет высококвалифицированные юридические услуги, сочетая многолетний опыт и глубокие знания законодательства. Мы специализируемся на защите интересов наших клиентов в самых сложных правовых вопросах, предлагая эффективные и индивидуальные решения.',
 		aboutText2:
 			'Команда профессионалов нашего офиса имеет богатый опыт работы в различных отраслях права, таких как гражданское, административное, уголовное право, а также коммерческое право. Мы гордимся своей репутацией надежных партнеров, способных успешно представлять интересы как частных лиц, так и корпоративных клиентов.',
-		
+
 		ourServices: 'Наши услуги',
 		criminalCases: 'Уголовные дела',
 		civilCases: 'Гражданские дела',
@@ -86,29 +86,40 @@ const translations = {
 		criminalFeature4: 'Освобождение под залог',
 		criminalFormTitle1: 'Получите консультацию',
 		criminalFormTitle2: 'по уголовному делу',
-		criminalMessagePlaceholder: 'Расскажите о вашей ситуации...',
+		criminalMessagePlaceholder: 'Расскажите о вашей ситуации',
 		administrativeMainTitle: 'АДМИНИСТРАТИВНЫЕ',
 		administrativeSecondTitle: 'ПРАВОНАРУШЕНИЯ',
 		administrativeHeaderText: 'ЗАЩИТА ОТ ШТРАФОВ И САНКЦИЙ',
 		administrativeDescription: 'Обжалование административных решений и штрафов',
-		administrativeFeature1: 'Обжалование штрафов ГИБДД',
+		administrativeFeature1:
+			'Обжалование штрафов, предписаний протоколов и постановлений госорганов',
 		administrativeFeature2: 'Налоговые споры',
 		administrativeFeature3: 'Лицензирование',
-		administrativeFeature4: 'Арбитражные споры',
 		administrativeFormTitle1: 'Обжалуем любые',
 		administrativeFormTitle2: 'административные решения',
-		administrativeMessagePlaceholder: 'Опишите административное нарушение...',
+		administrativeMessagePlaceholder: 'Опишите административное нарушение',
 		civilMainTitle: 'ГРАЖДАНСКИЕ',
 		civilSecondTitle: 'СПОРЫ И ДЕЛА',
 		civilHeaderText: 'ЗАЩИТА ВАШИХ ИНТЕРЕСОВ',
 		civilDescription: 'Решение споров между физическими и юридическими лицами',
 		civilFeature1: 'Взыскание долгов',
 		civilFeature2: 'Договорные споры',
-		civilFeature3: 'Недвижимость',
-		civilFeature4: 'Семейные споры',
+		civilFeature4: 'Семейные, трудовые, архитектурные и жилищные споры',
 		civilFormTitle1: 'Решим любой',
 		civilFormTitle2: 'гражданский спор',
-		civilMessagePlaceholder: 'Расскажите о вашем споре...',
+		civilMessagePlaceholder: 'Расскажите о вашем споре',
+		// АППК РК (Административный процедурно-процессуальный кодекс)
+		appkMainTitle: 'АДМИНИСТРАТИВНЫЙ ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ КОДЕКС',
+		appkHeaderText: 'КОНСУЛЬТАЦИИ И ЗАЩИТА',
+		appkDescription: 'Защита прав граждан в административных процедурах',
+		appkFeature1: 'Консультации по АППК',
+		appkFeature2: 'Защита в административных процедурах',
+		appkFeature3: 'Обжалование решений госорганов',
+		appkFeature4: 'Повышение качества госуслуг',
+		appkFormTitle1: 'Получите консультацию',
+		appkFormTitle2: 'по вопросам АППК',
+		appkMessagePlaceholder:
+			'Опишите вашу ситуацию с государственными органами',
 		// Reviews section
 		becomeNextClient: 'Станьте следующим довольным клиентом!',
 		joinHappyClients:
@@ -143,7 +154,7 @@ const translations = {
 		formTitle2: 'consultation right now',
 		fullName: 'Full Name',
 		phone: 'Phone Number',
-		message: 'Tell us what happened to you...',
+		message: 'Tell us what happened to you',
 		submitBtn: 'GET CONSULTATION',
 		ourTeam: 'Our Team',
 		whyChoose: 'Why choose us?',
@@ -162,7 +173,7 @@ const translations = {
 			'Our law firm provides highly qualified legal services, combining years of experience and deep knowledge of legislation. We specialize in protecting the interests of our clients in the most complex legal issues, offering effective and individual solutions.',
 		aboutText2:
 			'The team of professionals in our office has extensive experience in various areas of law, such as civil, administrative, criminal law, as well as commercial law. We are proud of our reputation as reliable partners, capable of successfully representing the interests of both private individuals and corporate clients.',
-		
+
 		ourServices: 'Our Services',
 		criminalCases: 'Criminal Cases',
 		civilCases: 'Civil Cases',
@@ -214,7 +225,7 @@ const translations = {
 		criminalFeature4: 'Bail release',
 		criminalFormTitle1: 'Get consultation',
 		criminalFormTitle2: 'on criminal case',
-		criminalMessagePlaceholder: 'Tell us about your situation...',
+		criminalMessagePlaceholder: 'Tell us about your situation',
 		administrativeMainTitle: 'ADMINISTRATIVE',
 		administrativeSecondTitle: 'VIOLATIONS',
 		administrativeHeaderText: 'PROTECTION FROM FINES AND SANCTIONS',
@@ -226,7 +237,7 @@ const translations = {
 		administrativeFormTitle1: 'We appeal any',
 		administrativeFormTitle2: 'administrative decisions',
 		administrativeMessagePlaceholder:
-			'Describe the administrative violation...',
+			'Describe the administrative violation',
 		civilMainTitle: 'CIVIL',
 		civilSecondTitle: 'DISPUTES AND CASES',
 		civilHeaderText: 'PROTECTION OF YOUR INTERESTS',
@@ -238,7 +249,20 @@ const translations = {
 		civilFeature4: 'Family disputes',
 		civilFormTitle1: 'We will resolve any',
 		civilFormTitle2: 'civil dispute',
-		civilMessagePlaceholder: 'Tell us about your dispute...',
+		civilMessagePlaceholder: 'Tell us about your dispute',
+		// APPK RK (Administrative Procedural Code)
+		appkMainTitle: 'ADMINISTRATIVE PROCEDURAL CODE',
+		appkHeaderText: 'CONSULTATIONS & PROTECTION',
+		appkDescription:
+			"Protection of citizens' rights in administrative procedures and rule of law",
+		appkFeature1: 'APPK consultations',
+		appkFeature2: 'Protection in administrative procedures',
+		appkFeature3: 'Appeal of government decisions',
+		appkFeature4: 'Improving quality of public services',
+		appkFormTitle1: 'Get consultation',
+		appkFormTitle2: 'on APPK matters',
+		appkMessagePlaceholder:
+			'Describe your situation with government agencies',
 		// Reviews section
 		becomeNextClient: 'Become our next satisfied client!',
 		joinHappyClients:
@@ -271,9 +295,9 @@ const translations = {
 		feature4: 'Бүкіл Қазақстан бойынша жұмыс істейміз',
 		formTitle1: 'Тегін кеңеске',
 		formTitle2: 'дәл қазір жазылыңыз',
-		fullName: 'Толық аты-жөні',
-		phone: 'Телефон нөірі',
-		message: 'Сізге не болғанын айтыңыз...',
+		fullName: 'Толық аты-жөніңіз',
+		phone: 'Телефон нөмеріңіз',
+		message: 'Сізге не болғанын жазыңыз',
 		submitBtn: 'КЕҢЕС АЛУ',
 		ourTeam: 'Біздің команда',
 		whyChoose: 'Неліктен бізді таңдау керек?',
@@ -344,7 +368,7 @@ const translations = {
 		criminalFeature4: 'Кепілдікпен босату',
 		criminalFormTitle1: 'Қылмыстық іс бойынша',
 		criminalFormTitle2: 'кеңес алыңыз',
-		criminalMessagePlaceholder: 'Сіздің жағдайыңыз туралы айтыңыз...',
+		criminalMessagePlaceholder: 'Сіздің жағдайыңыз туралы айтыңыз',
 		administrativeMainTitle: 'ӘКІМШІЛІК',
 		administrativeSecondTitle: 'ҚҰҚЫҚ БҰЗУШЫЛЫҚТАР',
 		administrativeHeaderText: 'АЙЫППҰЛДАР МЕН САНКЦИЯЛАРДАН ҚОРҒАУ',
@@ -357,7 +381,7 @@ const translations = {
 		administrativeFormTitle1: 'Кез келген әкімшілік',
 		administrativeFormTitle2: 'шешімдерге шағым жасаймыз',
 		administrativeMessagePlaceholder:
-			'Әкімшілік құқық бұзушылықты сипаттаңыз...',
+			'Әкімшілік құқық бұзушылықты сипаттаңыз',
 		civilMainTitle: 'АЗАМАТТЫҚ',
 		civilSecondTitle: 'ДАУЛАР МЕН ІСТЕР',
 		civilHeaderText: 'СІЗДІҢ МҮДДЕЛЕРІҢІЗДІ ҚОРҒАУ',
@@ -368,7 +392,20 @@ const translations = {
 		civilFeature4: 'Отбасылық даулар',
 		civilFormTitle1: 'Кез келген азаматтық',
 		civilFormTitle2: 'дауды шешеміз',
-		civilMessagePlaceholder: 'Сіздің дауыңыз туралы айтыңыз...',
+		civilMessagePlaceholder: 'Сіздің дауыңыз туралы айтыңыз',
+		// ӘІПК ҚР (Әкімшілік іс жүргізу-процестік кодекс)
+		appkMainTitle: 'ӘКІМШІЛІК РӘСІМДІК-ПРОЦЕСТІК КОДЕКСІ',
+		appkHeaderText: 'КЕҢЕСТЕР ЖӘНЕ ҚОРҒАУ',
+		appkDescription:
+			'Әкімшілік рәсімдік-процестік кодексі бойынша азаматтардың құқықтарын қорғау',
+		appkFeature1: 'ӘРПК бойынша кеңестер',
+		appkFeature2: 'Әкімшілік процедураларда қорғау',
+		appkFeature3: 'Мемлекеттік органдар шешімдеріне шағым',
+		appkFeature4: 'Мемлекеттік қызметтер сапасын арттыру',
+		appkFormTitle1: 'ӘРПК мәселелері бойынша',
+		appkFormTitle2: 'кеңес алыңыз',
+		appkMessagePlaceholder:
+			'Мемлекеттік органдармен жағдайыңызды сипаттаңыз',
 		// Reviews section
 		becomeNextClient: 'Келесі қанағаттанған клиентіміз болыңыз!',
 		joinHappyClients:

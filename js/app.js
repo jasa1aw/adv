@@ -158,162 +158,255 @@ function renderTeam() {
 	const container = document.getElementById('teamContainer')
 	if (!container) return
 	container.innerHTML = ''
+
 	teamMembers.forEach((member, index) => {
 		const isOdd = index % 2 === 1
+
+		// Генерируем HTML для секции опыта работы
+		const experienceSection = member.experience
+			? `
+			<!-- Секция опыта работы (без заголовка) -->
+			<div class="mb-6">
+				<div class="space-y-2">
+					<div class="text-gray-700 leading-relaxed text-base">
+						${member.experience[currentLang]
+							.split('<br/>')
+							.map(line =>
+								line.trim()
+									? `
+								<!-- Пункт опыта с зеленым маркером -->
+								<div class="flex items-start space-x-2">
+									<div class="w-1.5 h-1.5 bg-[#059669] rounded-full mt-2.5 flex-shrink-0"></div>
+									<span>${line.trim()}</span>
+								</div>
+							`
+									: ''
+							)
+							.filter(Boolean)
+							.join('')}
+					</div>
+				</div>
+			</div>
+		`
+			: ''
+
+		// Генерируем HTML для секции преимуществ
+		const advantagesSection = member.advantages
+			? `
+			<!-- Секция профессиональных преимуществ -->
+			<div class="mb-6">
+				<!-- Заголовок секции -->
+				<h4 class="text-lg font-bold text-gray-800 mb-3">
+					${translations[currentLang].advantages}
+				</h4>
+				
+				<!-- Список преимуществ (заголовок - описание) -->
+				<div class="space-y-4">
+					${member.advantages[currentLang]
+						.split('<br/><br/>')
+						.map(advantage => {
+							const [title, ...description] = advantage.split(' — ')
+							return `
+								<!-- Одно преимущество -->
+								<div class="space-y-1">
+									<!-- Заголовок преимущества (жирный шрифт) -->
+									<div class="font-semibold text-gray-800">
+										${title.trim()}
+									</div>
+									${
+										description.length > 0
+											? `
+										<!-- Описание преимущества (мелкий серый текст) -->
+										<div class="text-gray-600 text-sm leading-relaxed">
+											${description.join(' — ').trim()}
+										</div>
+									`
+											: ''
+									}
+								</div>
+							`
+						})
+						.join('')}
+				</div>
+			</div>
+		`
+			: ''
+
+		// Генерируем HTML для секции "Почему выбирают" (для других адвокатов)
+		const whyChooseSection =
+			member.expertise ||
+			member.individualApproach ||
+			member.confidentiality ||
+			member.rightsProtection
+				? `
+			<!-- Секция "Почему стоит выбирать меня?" -->
+			<div class="mb-6">
+				<!-- Заголовок секции -->
+				<h4 class="text-lg font-bold text-gray-800 mb-4">
+					${translations[currentLang].whyChoose}
+				</h4>
+				
+				<!-- Список преимуществ с зелеными маркерами -->
+				<div class="space-y-3">
+					${
+						member.expertise
+							? `
+						<!-- Экспертность -->
+						<div class="flex items-start space-x-3">
+							<div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
+							<div>
+								<strong class="text-gray-800">${translations[currentLang].expertise}</strong>
+								<span class="text-gray-700 ml-1">${member.expertise[currentLang]}</span>
+							</div>
+						</div>
+					`
+							: ''
+					}
+					
+					${
+						member.individualApproach
+							? `
+						<!-- Индивидуальный подход -->
+						<div class="flex items-start space-x-3">
+							<div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
+							<div>
+								<strong class="text-gray-800">${translations[currentLang].individualApproach}</strong>
+								<span class="text-gray-700 ml-1">${member.individualApproach[currentLang]}</span>
+							</div>
+						</div>
+					`
+							: ''
+					}
+					
+					${
+						member.confidentiality
+							? `
+						<!-- Конфиденциальность -->
+						<div class="flex items-start space-x-3">
+							<div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
+							<div>
+								<strong class="text-gray-800">${translations[currentLang].confidentiality}</strong>
+								<span class="text-gray-700 ml-1">${member.confidentiality[currentLang]}</span>
+							</div>
+						</div>
+					`
+							: ''
+					}
+					
+					${
+						member.rightsProtection
+							? `
+						<!-- Защита прав -->
+						<div class="flex items-start space-x-3">
+							<div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
+							<div>
+								<strong class="text-gray-800">${translations[currentLang].rightsProtection}</strong>
+								<span class="text-gray-700 ml-1">${member.rightsProtection[currentLang]}</span>
+							</div>
+						</div>
+					`
+							: ''
+					}
+				</div>
+			</div>
+		`
+				: ''
+
+		// Генерируем HTML для секции консультации
+		const consultationSection = member.consultation
+			? `
+			<!-- Секция консультации -->
+			<p class="text-gray-700 text-base font-bold mb-6">
+				${member.consultation[currentLang]}
+			</p>
+		`
+			: ''
+
+		// Основная HTML-структура карточки члена команды
 		const memberHtml = `
-	<div class="bg-white rounded-3xl shadow-lg overflow-hidden mb-8 ">
-        <div class="flex flex-col ${
-					isOdd ? 'lg:flex-row' : 'lg:flex-row-reverse'
-				}">
-          <!-- Photo Section -->
-          <div class="lg:w-2/5">
-            <img src="${member.image}" alt="${
-			member.name[currentLang]
-		}" class="w-full h-64 lg:h-full lg:object-cover md:object:cover object-contain object-center ">
-          </div>
-          
-          <!-- Content Section -->
-          <div class="lg:w-3/5 p-6 lg:p-8 flex flex-col justify-center">
-            <h2 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">${
-							member.name[currentLang]
-						}</h2>
-            
-            <p class="text-gray-700 mb-6 leading-relaxed text-base lg:text-lg">${
-							member.description[currentLang]
-						}</p>
-            
-            ${
-							member.experience
-								? `
-            <div class="mb-6">
-              <h4 class="text-lg font-bold text-gray-800 mb-3">${translations[currentLang].experience}</h4>
-              <p class="text-gray-700 leading-relaxed text-base">${member.experience[currentLang]}</p>
-            </div>
-            `
-								: ''
-						}
-            
-            ${
-							member.advantages
-								? `
-            <div class="mb-6">
-              <h4 class="text-lg font-bold text-gray-800 mb-3">${translations[currentLang].advantages}</h4>
-              <p class="text-gray-700 leading-relaxed text-base">${member.advantages[currentLang]}</p>
-            </div>
-            `
-								: ''
-						}
-            
-            ${
-							member.expertise ||
-							member.individualApproach ||
-							member.confidentiality ||
-							member.rightsProtection
-								? `
-            <div class="mb-6">
-              <h4 class="text-lg font-bold text-gray-800 mb-4">${
-								translations[currentLang].whyChoose
-							}</h4>
-              
-              <div class="space-y-3">
-                ${
-									member.expertise
-										? `
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
-                    <strong class="text-gray-800">${translations[currentLang].expertise}</strong>
-                    <span class="text-gray-700 ml-1">${member.expertise[currentLang]}</span>
-                  </div>
-                </div>
-                `
-										: ''
-								}
-                
-                ${
-									member.individualApproach
-										? `
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
-                    <strong class="text-gray-800">${translations[currentLang].individualApproach}</strong>
-                    <span class="text-gray-700 ml-1">${member.individualApproach[currentLang]}</span>
-                  </div>
-                </div>
-                `
-										: ''
-								}
-                
-                ${
-									member.confidentiality
-										? `<div class="flex items-start space-x-3">
-                    <div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong class="text-gray-800">${translations[currentLang].confidentiality}</strong>
-                      <span class="text-gray-700 ml-1">${member.confidentiality[currentLang]}</span>
-                    </div>
-                  </div>`
-										: ''
-								}
-                
-                ${
-									member.rightsProtection
-										? `<div class="flex items-start space-x-3">
-                    <div class="w-2 h-2 bg-emerald rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong class="text-gray-800">${translations[currentLang].rightsProtection}</strong>
-                      <span class="text-gray-700 ml-1">${member.rightsProtection[currentLang]}</span>
-                    </div>
-                  </div>`
-										: ''
-								}
-              </div>
-            </div>
-            `
-								: ''
-						}
-            
-            ${
-							member.consultation
-								? `
-            <div class="mb-6">
-              <p class="text-gray-700 italic text-base">${member.consultation[currentLang]}</p>
-            </div>
-            `
-								: ''
-						}
-            
-            <p class="text-gray-700 mb-6 text-base">${
-							translations[currentLang].contactToday
-						}</p>
-            
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/${
-								member.contacts.whatsapp
-							}" target="_blank" class="whatsapp-btn text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-3 font-semibold text-base transition-all duration-300 hover:transform hover:scale-105">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787"/>
-                </svg>
-                <span>WhatsApp</span>
-              </a>
-              ${
+			<!-- Карточка члена команды с белым фоном и тенью -->
+			<div class="bg-white rounded-3xl shadow-lg overflow-hidden mb-8">
+				
+				<!-- Основной контейнер с адаптивным направлением flex -->
+				<div class="flex flex-col ${isOdd ? 'lg:flex-row' : 'lg:flex-row-reverse'}">
+					
+					<!-- СЕКЦИЯ ФОТОГРАФИИ (40% ширины на больших экранах) -->
+					<div class="lg:w-2/5">
+						<img src="${member.image}" 
+							 alt="${member.name[currentLang]}" 
+							 class="w-full h-64 lg:h-full lg:object-cover md:object:cover object-contain object-center">
+					</div>
+					
+					<!-- СЕКЦИЯ КОНТЕНТА (60% ширины на больших экранах) -->
+					<div class="lg:w-3/5 p-6 lg:p-8 flex flex-col justify-center">
+						
+						<!-- ИМЯ АДВОКАТА (большой жирный заголовок) -->
+						<h2 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-2">
+							${member.name[currentLang]}
+						</h2>
+						
+						<!-- ОПИСАНИЕ (должность и общий опыт) -->
+						<div class="text-gray-700 mb-6 leading-relaxed text-base lg:text-lg">
+							${member.description[currentLang]}
+						</div>
+						
+						<!-- ПРОФЕССИОНАЛЬНЫЙ ОПЫТ (список с маркерами) -->
+						${experienceSection}
+						
+						<!-- ПРОФЕССИОНАЛЬНЫЕ ПРЕИМУЩЕСТВА (заголовки + описания) -->
+						${advantagesSection}
+						
+						<!-- ПОЧЕМУ ВЫБИРАЮТ (для других адвокатов) -->
+						${whyChooseSection}
+						
+						<!-- КОНСУЛЬТАЦИЯ (курсивом) -->
+						${consultationSection}
+						
+						<!-- ПРИЗЫВ К ДЕЙСТВИЮ -->
+						<p class="text-gray-700 mb-6 text-base">
+							${translations[currentLang].contactToday}
+						</p>
+						
+						<!-- КНОПКИ КОНТАКТОВ -->
+						<div class="flex flex-col sm:flex-row gap-4">
+							
+							<!-- Кнопка WhatsApp (всегда есть) -->
+							<a href="https://wa.me/${member.contacts.whatsapp}" 
+							   target="_blank" 
+							   class="whatsapp-btn text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-3 font-semibold text-base transition-all duration-300 hover:transform hover:scale-105">
+								
+								<!-- Иконка WhatsApp -->
+								<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787"/>
+								</svg>
+								<span>WhatsApp</span>
+							</a>
+							
+							${
 								member.contacts.email
 									? `
-              <a href="mailto:${member.contacts.email}" class="email-btn text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-3 font-semibold text-base transition-all duration-300 hover:transform hover:scale-105">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                </svg>
-                <span>Email</span>
-              </a>
-              `
+								<!-- Кнопка Email (если есть email) -->
+								<a href="mailto:${member.contacts.email}" 
+								   class="email-btn text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-3 font-semibold text-base transition-all duration-300 hover:transform hover:scale-105">
+									
+									<!-- Иконка Email -->
+									<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+										<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+									</svg>
+									<span>Email</span>
+								</a>
+							`
 									: ''
 							}
-            </div>
-          </div>
-        </div>
-      </div>
-    `
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		`
+
 		container.innerHTML += memberHtml
 	})
 }
