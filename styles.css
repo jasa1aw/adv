@@ -95,16 +95,17 @@ body {
 }
 
 .lang-trigger {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	gap: 8px;
 	background: white;
 	border: 1px solid #e5e7eb;
 	border-radius: 8px;
-	padding: 8px 12px;
+	padding: 6px 12px;
 	cursor: pointer;
 	transition: all 0.2s;
-	min-width: 140px;
+	min-width: 110px;
 }
 
 .lang-trigger:hover {
@@ -121,7 +122,7 @@ body {
 	border-radius: 8px;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 	z-index: 99999;
-	min-width: 140px;
+	width: 100%;
 	margin-top: 4px;
 }
 
@@ -131,6 +132,7 @@ body {
 }
 
 .lang-option {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -168,7 +170,8 @@ body {
 .stats-number {
 	font-size: 3rem;
 	font-weight: 800;
-	background: linear-gradient(45deg, #059669, #059669);
+	background: linear-gradient(45deg, #f59e0b, #fbbf24);
+	/* background: linear-gradient(45deg, #059669, #059669); */
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
@@ -229,6 +232,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
+	height: auto !important;
 	will-change: transform;
 	/* Optimize rendering */
 	contain: layout;
