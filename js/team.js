@@ -97,4 +97,36 @@ const teamMembers = [
 			whatsapp: '+77775401001',
 		},
 	},
+	{
+		id: 4,
+		name: {
+			ru: 'Жумагулов Нурсултан Жулдызович',
+			en: 'Zhumagulov Nursultan Zhuldyzovich',
+			kz: 'Жумагулов Нурсултан Жулдызович',
+		},
+		image: '../images/team/Zhumagulov_N.webp',
+		description: {
+			ru: 'Адвокат с опытом работы в правоохранительных органах<br/>Профессиональный опыт: 10 лет',
+			en: 'Lawyer with experience in law enforcement agencies<br/>Professional experience: 10 years',
+			kz: 'Құқық қорғау органдарында жұмыс тәжірибесі бар заңгер<br/>Кәсіби тәжірибе: 10 жыл',
+		},
+		experience: {
+			ru: 'Органы следствия МВД РК - 7 лет<br/>Дознание в УАП УП г. Караганды - 1 год<br/>Отдел земельных отношений, архитектуры и градостроительства г. Шахтинск - 1 год<br/>Областная станция скорой помощи Карагандинской области - 1 год',
+			en: 'Investigation Department of the Ministry of Internal Affairs of the Republic of Kazakhstan - 7 years<br/>Inquiry at UAP UP Karaganda - 1 year<br/>Department of Land Relations, Architecture and Urban Planning of Shaktinsk - 1 year<br/>Regional Ambulance Station of Karagandy Region - 1 year',
+			kz: 'ҚР ІІМ тергеу органдары - 7 жыл<br/>Қарағанды қ. УАП ДП дознание - 1 жыл<br/>Шахтинск қ. жер қатынастары, сәулет және қала құрылысы бөлімі - 1 жыл<br/>Қарағанды облысының жедел жәрдем станциясы - 1 жыл',
+		},
+		advantages: {
+			ru: 'Опыт следственной работы — Семь лет в органах следствия МВД обеспечивают глубокое понимание процесса расследования<br/><br/>Универсальная практика — Ведение уголовных, административных и гражданских дел с учетом специфики каждой области<br/><br/>Специализация — Уголовные дела, ДТП, земельные споры, семейные вопросы, взыскание задолженности',
+			en: 'Investigative work experience — Seven years in the investigation bodies of the Ministry of Internal Affairs provide deep understanding of the investigation process<br/><br/>Universal practice — Handling criminal, administrative and civil cases taking into account the specifics of each area<br/><br/>Specialization — Criminal cases, traffic accidents, land disputes, family matters, debt collection',
+			kz: 'Тергеу жұмысының тәжірибесі — ІІМ тергеу органдарындағы жеті жылдық тәжірибе тергеу процесін терең түсінуді қамтамасыз етеді<br/><br/>Әмбебап тәжірибе — Әр саланың ерекшеліктерін ескере отырып қылмыстық, әкімшілік және азаматтық істерді жүргізу<br/><br/>Мамандану — Қылмыстық істер, ЖОА, жер даулары, отбасылық мәселелер, берешекті өндіру',
+		},
+		consultation: {
+			ru: 'Предварительная консультация по записи',
+			en: 'Preliminary consultation by appointment',
+			kz: 'Алдын ала кеңес беру жазылу арқылы',
+		},
+		contacts: {
+			whatsapp: '+77013943404'
+		},
+	},
 ]
