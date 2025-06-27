@@ -141,7 +141,7 @@ function renderServices() {
 		const serviceHtml = `
 	<div class="service-item ${
 		service.color
-	} hover:bg-slate-800 text-[#1f2937] px-6 py-4 rounded-2xl cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+	} hover:bg-slate-800 text-lg text-[#1f2937] px-6 py-4 rounded-2xl cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
         <span class="font-semibold text-center block" data-translate="${
 					service.titleKey
 				}">
