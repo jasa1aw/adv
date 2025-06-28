@@ -62,7 +62,7 @@ const teamMembers = [
 		},
 		contacts: {
 			whatsapp: '+77013798180',
-			email: 'seitova.nellya@mail.ru',
+			email: 'zhas.t.1979@mail.ru',
 		},
 	},
 	{
@@ -126,7 +126,8 @@ const teamMembers = [
 			kz: 'Алдын ала кеңес беру жазылу арқылы',
 		},
 		contacts: {
-			whatsapp: '+77013943404'
+			whatsapp: '+77013943404',
+			email: 'nurs4@mail.ru',
 		},
 	},
 ]
