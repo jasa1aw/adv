@@ -5,7 +5,7 @@
   
   <!-- Главная страница -->
   <url>
-    <loc>https://advokat-makyzhanov.kz/</loc>
+    <loc>https://www.kanatadvokat.kz</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -16,6 +16,16 @@
       <image:loc>https://www.kanatadvokat.kz/images/icons/logo.svg</image:loc>
       <image:title>Адвокат Макыжанов К.Т. логотип</image:title>
       <image:caption>Логотип адвокатской конторы Макыжанова К.Т.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.kanatadvokat.kz/images/team/Bekzatov_K.webp</image:loc>
+      <image:title>Адвокат Бекзатов Куат</image:title>
+      <image:caption>Адвокат Бекзатов Куат</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.kanatadvokat.kz/images/team/Tuganbayev_Z.webp</image:loc>
+      <image:title>Юрист Туганбаев Жасулан</image:title>
+      <image:caption>Юрист Туганбаев Жасулан</image:caption>
     </image:image>
   </url>
 

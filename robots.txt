@@ -60,4 +60,5 @@ Disallow: /
 User-agent: SemrushBot
 Disallow: /
 
+Host: www.kanatadvokat.kz
 # Конец файла robots.txt 
