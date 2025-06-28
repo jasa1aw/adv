@@ -687,7 +687,7 @@ function validateForm(form) {
 		} else if (messageInput.value.trim().length < 2) {
 			showError(
 				messageInput,
-				'Опишите ситуацию более подробно (минимум 10 символов)'
+				'Опишите ситуацию более подробно'
 			)
 			isValid = false
 		}
