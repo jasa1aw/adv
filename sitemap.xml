@@ -9,27 +9,19 @@
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://advokat-makyzhanov.kz/" />
-    <xhtml:link rel="alternate" hreflang="kk" href="https://advokat-makyzhanov.kz/?lang=kz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://advokat-makyzhanov.kz/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.kanatadvokat.kz" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://www.kanatadvokat.kz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kanatadvokat.kz" />
     <image:image>
-      <image:loc>https://advokat-makyzhanov.kz/images/icons/logo.svg</image:loc>
+      <image:loc>https://www.kanatadvokat.kz/images/icons/logo.svg</image:loc>
       <image:title>Адвокат Макыжанов К.Т. логотип</image:title>
       <image:caption>Логотип адвокатской конторы Макыжанова К.Т.</image:caption>
     </image:image>
   </url>
 
-  <!-- Страница о компании -->
-  <url>
-    <loc>https://advokat-makyzhanov.kz/#about</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Услуги -->
   <url>
-    <loc>https://advokat-makyzhanov.kz/#services</loc>
+    <loc>https://www.kanatadvokat.kz/#services</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -37,7 +29,7 @@
 
   <!-- Команда -->
   <url>
-    <loc>https://advokat-makyzhanov.kz/#team</loc>
+    <loc>https://www.kanatadvokat.kz/#team</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -45,7 +37,7 @@
 
   <!-- Отзывы -->
   <url>
-    <loc>https://advokat-makyzhanov.kz/#reviews</loc>
+    <loc>https://www.kanatadvokat.kz/#reviews</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -53,7 +45,7 @@
 
   <!-- Уголовные дела -->
   <url>
-    <loc>https://advokat-makyzhanov.kz/#criminal</loc>
+    <loc>https://www.kanatadvokat.kz/#criminal</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -61,7 +53,7 @@
 
   <!-- Административные дела -->
   <url>
-    <loc>https://advokat-makyzhanov.kz/#administrative</loc>
+    <loc>https://www.kanatadvokat.kz/#administrative</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -69,7 +61,14 @@
 
   <!-- Гражданские дела -->
   <url>
-    <loc>https://advokat-makyzhanov.kz/#civil</loc>
+    <loc>https://www.kanatadvokat.kz/#civil</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kanatadvokat.kz/#appk</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -77,24 +76,24 @@
 
   <!-- Казахская версия сайта -->
   <url>
-    <loc>https://advokat-makyzhanov.kz/?lang=kz</loc>
+    <loc>https://www.kanatadvokat.kz</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://advokat-makyzhanov.kz/" />
-    <xhtml:link rel="alternate" hreflang="kk" href="https://advokat-makyzhanov.kz/?lang=kz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://advokat-makyzhanov.kz/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.kanatadvokat.kz" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://www.kanatadvokat.kz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kanatadvokat.kz" />
   </url>
 
   <!-- Английская версия сайта -->
   <url>
-    <loc>https://advokat-makyzhanov.kz/?lang=en</loc>
+    <loc>https://www.kanatadvokat.kz</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://advokat-makyzhanov.kz/" />
-    <xhtml:link rel="alternate" hreflang="kk" href="https://advokat-makyzhanov.kz/?lang=kz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://advokat-makyzhanov.kz/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.kanatadvokat.kz" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://www.kanatadvokat.kz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kanatadvokat.kz" />
   </url>
 
 </urlset> 

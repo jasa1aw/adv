@@ -31,7 +31,7 @@ Disallow: /private/
 Disallow: /logs/
 
 # Разрешить доступ к изображениям
-Allow: /images/
+Allow: /images/icons
 Allow: *.jpg
 Allow: *.jpeg
 Allow: *.png
@@ -40,7 +40,7 @@ Allow: *.svg
 Allow: *.webp
 
 # Указать расположение sitemap
-Sitemap: https://advokat-makyzhanov.kz/sitemap.xml
+Sitemap: https://www.kanatadvokat.kz/sitemap.xml
 
 # Время задержки между запросами (в секундах)
 Crawl-delay: 1
