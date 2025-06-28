@@ -555,6 +555,9 @@ function sendToWhatsApp(data) {
 		case 'civil':
 			caseTypeText = 'гражданскому спору'
 			break
+		case 'appk':
+			caseTypeText = 'вопросу АППК'
+			break
 		default:
 			caseTypeText = 'правовому вопросу'
 	}
@@ -681,7 +684,7 @@ function validateForm(form) {
 		if (!messageInput.value.trim()) {
 			showError(messageInput, 'Пожалуйста, опишите вашу ситуацию')
 			isValid = false
-		} else if (messageInput.value.trim().length < 5) {
+		} else if (messageInput.value.trim().length < 10) {
 			showError(
 				messageInput,
 				'Опишите ситуацию более подробно (минимум 10 символов)'
